@@ -3,7 +3,7 @@ import Hero from './components/Home/Hero'
 
 const App = () => {
   return (
-    <div>
+    <div className='max-w-screen'>
       <Hero/>
     </div>
   )
