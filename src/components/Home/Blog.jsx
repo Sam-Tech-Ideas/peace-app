@@ -21,7 +21,7 @@ const Blog = () => {
                     CATEGORY
                   </h2>
                   <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                    The Catalyzer
+                    The Market place delivery
                   </h1>
                   <p class="leading-relaxed mb-3">
                     Photo booth fam kinfolk cold-pressed sriracha leggings
@@ -88,7 +88,7 @@ const Blog = () => {
                     CATEGORY
                   </h2>
                   <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                    The 400 Blows
+                   The Market Place Delivery
                   </h1>
                   <p class="leading-relaxed mb-3">
                     Photo booth fam kinfolk cold-pressed sriracha leggings
@@ -155,7 +155,7 @@ const Blog = () => {
                     CATEGORY
                   </h2>
                   <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                    Shooting Stars
+                    The Market Place Delivery
                   </h1>
                   <p class="leading-relaxed mb-3">
                     Photo booth fam kinfolk cold-pressed sriracha leggings
