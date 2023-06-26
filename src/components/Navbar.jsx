@@ -310,7 +310,7 @@ const Navbar = () => {
           <div className="hidden md:flex mr-[126px]">
             <a
               href=""
-              className=" hover:text-white px-6   bg-blue-600 py-2 rounded hover:bg-blue-700"
+              className=" text-white px-6   bg-blue-600 py-2 rounded hover:bg-blue-700"
               target="_blank"
             >
               Contact Us
@@ -363,7 +363,7 @@ const Navbar = () => {
               <a
                 href=""
                 target="_blank"
-                className="bg-blue-600 w-full ml-3 rounded-md hover:bg-blue-800 px-4 py-2"
+                className="bg-blue-600 w-full ml-3 rounded-md hover:bg-blue-800 px-4 py-2 text-white"
               >
                 Contact Us
               </a>
