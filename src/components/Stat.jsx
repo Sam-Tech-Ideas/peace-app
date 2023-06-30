@@ -1,0 +1,60 @@
+import React from "react";
+import { FaFile, FaFileAlt } from "react-icons/fa";
+
+const Stat = () => {
+  return (
+    <div
+      className=" flex justify-center items-center flex-col"
+      style={{
+        backgroundImage:
+          "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://firebasestorage.googleapis.com/v0/b/fdsproject-430e7.appspot.com/o/imagesPersoal%2Fback.jpg?alt=media&token=4b7c030b-c96d-42aa-a38c-30bcaddb50c9)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        height: "40vh",
+        backgroundAttachment: "fixed",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <div class="flex justify-center items-center w-full pl-24 pb-8">
+        <div class="flex-col sm:flex-row sm:justify-around w-full sm:flex items-center">
+          <div class="py-8">
+            <div>
+              <FaFileAlt size={40} color="white" />
+              <h1>
+                <span class="text-white text-4xl font-bold">100</span>
+              </h1>
+            </div>
+          </div>
+          <div>
+            <div>
+              <FaFileAlt size={40} color="white" />
+              <h1>
+                <span class="text-white text-4xl font-bold">100</span>
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="flex-col sm:flex-row sm:justify-around w-full sm:flex items-center">
+          <div class="py-8">
+            <div>
+              <FaFileAlt size={40} color="white" />
+              <h1>
+                <span class="text-white text-4xl font-bold">100</span>
+              </h1>
+            </div>
+          </div>
+          <div>
+            <div>
+              <FaFileAlt size={40} color="white" />
+              <h1>
+                <span class="text-white text-4xl font-bold">100</span>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Stat;

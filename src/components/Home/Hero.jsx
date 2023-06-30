@@ -1,93 +1,49 @@
-// import { Button } from "@material-tailwind/react";
-// import React, { useState, useEffect } from "react";
-
-// const images = [
-//   "https://images.unsplash.com/photo-1687218209500-be09358e0072?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-//   "https://images.unsplash.com/photo-1661956601349-f61c959a8fd4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxNnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-
-//   // Add more image URLs here
-// ];
-
-// const Hero = () => {
-//   const [currentImage, setCurrentImage] = useState(images[0]);
-
-//   useEffect(() => {
-//     const interval = setInterval(() => {
-//       const randomIndex = Math.floor(Math.random() * images.length);
-//       setCurrentImage(images[randomIndex]);
-//     }, 5000); // Change the image every 5 seconds
-
-//     return () => clearInterval(interval);
-//   }, []);
-
-//   return (
-//     <section
-//       className="relative flex items-center justify-center h-[60vh] bg-cover bg-center sm:h-[70vh]"
-//       style={{
-//         backgroundImage: `url(${currentImage})`,
-//         backgroundSize: "cover",
-//         backgroundRepeat: "no-repeat",
-//         backgroundPosition: "center ",
-//       }}
-//     >
-//       <div className="absolute inset-0 bg-black opacity-60 "></div>
-//       <div className="relative text-white">
-//         <h1 className="text-4xl font-bold sm:texl-lg text-center ">
-//           EXPERIENCE THE BEST SERVICES OF AN ENTERPRISE <br />{" "}
-//           <span className="text-md font-thin italic">Like a </span>
-//           PEACEFUL DREAM.
-//         </h1>
-//         <div className="flex-col justify-center flex items-center">
-//           <p className="mt-4 text-center text-lg   mx-2">
-//             For the sake of our service no customer will leave and decide not to
-//             return.
-//           </p>
-//           <div className="my-2 ">
-//             <Button className="bg-blue-500 text-white px-8 py-3 hover:shadow-none rounded-md hover:bg-blue-700 capitalize text-lg">
-//               Order Now
-//             </Button>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Hero;
-
 import React from "react";
-import img from "../../../src/assets/Site.jpg";
+import img from "../../assets/back.jpg";
 
-const Hero = () => {
+function Hero() {
   return (
-    <section class=" w-full sm:w-full">
-      <div class=" w-full flex px-5 py-24 md:flex-row flex-col items-center lg:justify-center">
-        <div class=" md:w-1/2 lg:pr-6 md:pr-8 flex flex-col md:items-start md:text-left mb-8 md:mb-0 items-center text-center">
-          <h1 class=" sm:text-4xl text-3xl mb-4 font-bold text-blue-300">
-            EXPERIENCE THE BEST OF AN ENTERPRISE
-            <br class="hidden lg:inline-block" />
-            <span className="italic"> Like a </span> PEACEFUL DREAM
-          </h1>
-          <p class="mb-8 leading-relaxed text-blue-400 text-lg">
-            For the sake of our service no customer will leave and decide not to
-            return.
-          </p>
-          <div class="flex justify-center">
-            <button class="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">
-              Order Here
-            </button>
+    <div
+      className=" h-screen text-white"
+      style={{
+        backgroundImage:
+          "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://firebasestorage.googleapis.com/v0/b/fdsproject-430e7.appspot.com/o/imagesPersoal%2Fback.jpg?alt=media&token=4b7c030b-c96d-42aa-a38c-30bcaddb50c9)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        height: "90vh",
+        backgroundAttachment: "fixed",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <div class="container mx-auto flex px-5  items-center justify-center flex-col">
+        <div className="flex justify-center items-center h-screen">
+          <div className="text-center  w-full">
+            <h1 className="text-5xl font-bold leading-tight">
+               Experience  the best of an enterprise <br /> like a peaceful dream
+            </h1>
+            <p className="text-xl py-4">
+               For the sake of our service no customer will leave and decide not to return. 
+               
+            </p>
+
+            <div>
+              <button className="bg-blue-500 hover:shadow-lg hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-md mx-4">
+                Order Here
+                </button>
+
+              <button className="bg-transparent text-sm hover:shadow-sm hover:duration-700 hover:bg-opacity-30 hover:bg-[rgb(254,249,249)] hover:border-white text-white font-semibold hover:text-white py-3 px-8  border border-white hover:border-transparent rounded-md mx-2">
+                Learn More
+                </button>
+                
+            </div>
+            <div className="flex justify-center mx-auto">
+             
+            </div>
           </div>
         </div>
-        <div class="lg:max-w-lg lg:w-2/3 md:w-1/2 w-5/6">
-          <img
-            class="object-cover object-center rounded"
-            alt="hero"
-            src={img}
-          />
-        </div>
       </div>
-    </section>
+    </div>
   );
-};
+}
 
 export default Hero;
