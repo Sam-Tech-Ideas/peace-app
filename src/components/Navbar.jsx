@@ -28,6 +28,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between w-full h-full md:px-8">
           <div className="flex items-center   py-14">
             <img src={img} alt="" height="" width="" className="h-16 " />
+            <span className="text-xl font-bold">
+              Peaceful Dreament
+            </span>
           </div>
           <ul className="hidden md:flex">
             {links.map(({ id, link }) => (
@@ -62,12 +65,15 @@ const Navbar = () => {
           <div
             className={
               nav
-                ? "shadow-xl fixed left-0 top-0 w-4/5 bg-blue-300 text-white h-full p-10 ease-in duration-300"
+                ? "shadow-xl fixed left-0 top-0 w-4/5 bg-white text-black h-full p-10 ease-in duration-300"
                 : "fixed top-0 left-[-100%] p-10 duration-300 ease-in h-full "
             }
           >
             <div className="flex items-center justify-between w-full text-black ">
               <img src={img} alt="" height="" width="" className="h-20 w-10" />
+              <span className="text-xl font-bold">
+                Peaceful Dreament
+              </span>
 
               <div onClick={() => setNav(false)} className="cursor-pointer p-3">
                 <FaTimes size={30} />
