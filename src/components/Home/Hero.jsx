@@ -26,12 +26,12 @@ function Hero() {
                
             </p>
 
-            <div>
-              <button className="bg-blue-500 hover:shadow-lg hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-md mx-4">
+            <div className="flex justify-center">
+              <button className="bg-blue-500 hover:shadow-lg hover:bg-blue-600 text-white font-bold  px-4 py-1 sm:py-3 sm:px-8 rounded-md mx-4">
                 Order Here
                 </button>
 
-              <button className="bg-transparent text-sm hover:shadow-sm hover:duration-700 hover:bg-opacity-30 hover:bg-[rgb(254,249,249)] hover:border-white text-white font-semibold hover:text-white py-3 px-8  border border-white hover:border-transparent rounded-md mx-2">
+              <button className="bg-transparent text-sm hover:shadow-sm hover:duration-700 hover:bg-opacity-30 hover:bg-[rgb(254,249,249)] hover:border-white text-white font-semibold hover:text-white sm:py-3 px-4 py-1 sm:px-8  border border-white hover:border-transparent rounded-md mx-2">
                 Learn More
                 </button>
                 
