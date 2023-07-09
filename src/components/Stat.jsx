@@ -17,9 +17,9 @@ const Stat = () => {
     >
       <div class="flex justify-center items-center w-full pl-24 pb-8">
         <div class="flex-col sm:flex-row sm:justify-around w-full sm:flex items-center">
-          <div class="py-8">
+          <div class="py-4">
             <div>
-              <AiOutlineUsergroupAdd size={65} color="white" className="my-8" />
+              <AiOutlineUsergroupAdd size={45} color="white" className="" />
               <h1>
                 <p class="text-white text-4xl font-bold pb-2">100</p>
                 <p className="text-white">Customers</p>
@@ -28,7 +28,7 @@ const Stat = () => {
           </div>
           <div>
             <div>
-              <AiOutlineUsergroupAdd size={65} color="white" className="my-8" />
+              <AiOutlineUsergroupAdd size={45} color="white" className="" />
               <h1>
                 <p class="text-white text-4xl font-bold pb-2">100</p>
                 <p className="text-white">Customers</p>
@@ -37,9 +37,9 @@ const Stat = () => {
           </div>
         </div>
         <div class="flex-col sm:flex-row sm:justify-around w-full sm:flex items-center">
-          <div class="py-8">
+          <div class="py-4">
             <div>
-              <AiOutlineUsergroupAdd size={65} color="white" className="my-8 " />
+              <AiOutlineUsergroupAdd size={45} color="white" className="" />
               <h1>
                 <p class="text-white text-4xl font-bold pb-2">100</p>
                 <p className="text-white">Customers</p>
@@ -48,7 +48,7 @@ const Stat = () => {
           </div>
           <div>
             <div>
-              <AiOutlineUsergroupAdd size={65} color="white" className="my-8" />
+              <AiOutlineUsergroupAdd size={45} color="white" className="" />
               <h1>
                 <p class="text-white text-4xl font-bold pb-2">100</p>
                 <p className="text-white">Customers</p>
