@@ -18,10 +18,10 @@ function Hero() {
       <div class="container mx-auto flex px-5  items-center justify-center flex-col">
         <div className="flex justify-center items-center h-screen">
           <div className="text-center  w-full">
-            <h1 className="text-5xl font-bold leading-tight">
+            <h1 className="sm:text-5xl text-3xl font-bold leading-tight ">
                Experience  the best of an enterprise <br /> like a peaceful dream
             </h1>
-            <p className="text-xl py-4">
+            <p className="sm:text-xl py-4 text-md ">
                For the sake of our service no customer will leave and decide not to return. 
                
             </p>
