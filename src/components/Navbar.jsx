@@ -29,7 +29,7 @@ const Navbar = () => {
           <div className="flex items-center   py-14">
             <img src={img} alt="" height="" width="" className="h-16 " />
             <span className="text-xl font-bold">
-              Peaceful Dreament
+           PEACEFUL DREAMENT
             </span>
           </div>
           <ul className="hidden md:flex">
@@ -72,7 +72,7 @@ const Navbar = () => {
             <div className="flex items-center justify-between w-full text-black ">
               <img src={img} alt="" height="" width="" className="h-20 w-10" />
               <span className="text-xl font-bold">
-                Peaceful Dreament
+                PEACEFUL DREAMENT
               </span>
 
               <div onClick={() => setNav(false)} className="cursor-pointer p-3">
