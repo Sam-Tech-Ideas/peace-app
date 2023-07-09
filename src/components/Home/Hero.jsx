@@ -11,7 +11,7 @@ function Hero() {
         backgroundSize: "cover",
         backgroundPosition: "center",
         height: "90vh",
-        backgroundAttachment: "fixed",
+      
         backgroundRepeat: "no-repeat",
       }}
     >
