@@ -7,6 +7,7 @@ import Layout from "./components/Layout";
 import Down from "./components/Down";
 import Stat from "./components/Stat";
 import Team from "./components/Team";
+import Contact from "./components/Home/Contact";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Services />
         <Stat />
         <Team/>
+        <Contact/>
       
       </Layout>
     </div>

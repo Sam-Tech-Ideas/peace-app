@@ -69,10 +69,11 @@ const Stat = () => {
               <div>
                 <AiOutlineUsergroupAdd
                   size={45}
+
                   color="white"
-                  className="sm:my-4"
+                  className="sm:my-4 "
                 />
-              </div>{" "}
+              </div>
               <h1>
                 <p class="text-white text-4xl font-bold pb-2">100</p>
                 <p className="text-white">Customers</p>
