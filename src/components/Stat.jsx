@@ -10,7 +10,7 @@ const Stat = () => {
           "linear-gradient(rgba(0, 0, 256, 0.2), rgba(0, 0, 0, 0.5)), url(https://firebasestorage.googleapis.com/v0/b/fdsproject-430e7.appspot.com/o/imagesPersoal%2Fback.jpg?alt=media&token=4b7c030b-c96d-42aa-a38c-30bcaddb50c9)",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        height: "40vh",
+        height: "50vh",
         backgroundAttachment: "fixed",
         backgroundRepeat: "no-repeat",
       }}
