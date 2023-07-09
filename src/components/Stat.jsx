@@ -19,7 +19,13 @@ const Stat = () => {
         <div class="flex-col sm:flex-row sm:justify-around w-full sm:flex items-center">
           <div class="py-4">
             <div>
-              <AiOutlineUsergroupAdd size={45} color="white" className="" />
+              <div>
+                <AiOutlineUsergroupAdd
+                  size={45}
+                  color="white"
+                  className="sm:my-4"
+                />
+              </div>{" "}
               <h1>
                 <p class="text-white text-4xl font-bold pb-2">100</p>
                 <p className="text-white">Customers</p>
@@ -28,7 +34,13 @@ const Stat = () => {
           </div>
           <div>
             <div>
-              <AiOutlineUsergroupAdd size={45} color="white" className="" />
+              <div>
+                <AiOutlineUsergroupAdd
+                  size={45}
+                  color="white"
+                  className="sm:my-4"
+                />
+              </div>{" "}
               <h1>
                 <p class="text-white text-4xl font-bold pb-2">100</p>
                 <p className="text-white">Customers</p>
@@ -39,7 +51,13 @@ const Stat = () => {
         <div class="flex-col sm:flex-row sm:justify-around w-full sm:flex items-center">
           <div class="py-4">
             <div>
-              <AiOutlineUsergroupAdd size={45} color="white" className="" />
+              <div>
+                <AiOutlineUsergroupAdd
+                  size={45}
+                  color="white"
+                  className="sm:my-4"
+                />
+              </div>
               <h1>
                 <p class="text-white text-4xl font-bold pb-2">100</p>
                 <p className="text-white">Customers</p>
@@ -48,7 +66,13 @@ const Stat = () => {
           </div>
           <div>
             <div>
-              <AiOutlineUsergroupAdd size={45} color="white" className="" />
+              <div>
+                <AiOutlineUsergroupAdd
+                  size={45}
+                  color="white"
+                  className="sm:my-4"
+                />
+              </div>{" "}
               <h1>
                 <p class="text-white text-4xl font-bold pb-2">100</p>
                 <p className="text-white">Customers</p>
