@@ -49,8 +49,7 @@ export default function Testionials() {
                       </svg>
                       <p class="leading-relaxed text-lg">
                         We are very pleased with the quality of service provided by
-                        the team at PeacefulDreament. The team was very responsive and
-                        helped us to meet our goals in a timely fashion. We would
+                        the team at PeacefulDreament. We would
                         definitely recommend PeacefulDreament to anyone looking for
                         a quality polythene bag manufacturer.
                                 </p>
@@ -77,9 +76,7 @@ export default function Testionials() {
                       </svg>
                       <p class="leading-relaxed text-lg">
                     Peaceful Dreament is a great company to work with. They are
-                    very responsive and professional. The team at Peaceful
-                    Dreament is very reliable and always willing to help us
-                    with any questions or concerns we have. We would highly
+                    very responsive and professional. We would highly
                     recommend Peaceful Dreament to anyone looking for a
                     polythene bag manufacturer.
        </p>
