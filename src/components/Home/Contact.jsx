@@ -59,11 +59,11 @@ const Contact = () => {
             </button>
             <p class="text-xs text-gray-500 mt-3"></p>
           </div>
-          <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:ml-10  flex items-end justify-start relative">
+          <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:ml-10  w-full">
             <Iframe
               width="100%"
               height="100%"
-              class="absolute inset-0"
+            
               frameborder="0"
               title="map"
               marginheight="0"
