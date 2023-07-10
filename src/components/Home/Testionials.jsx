@@ -53,7 +53,7 @@ export default function Testionials() {
                         definitely recommend PeacefulDreament to anyone looking for
                         a quality polythene bag manufacturer.
                                 </p>
-                      <span class="inline-block h-1 w-10 rounded bg-gray-100 mt-8 mb-6"></span>
+                      <span class="inline-block h-1 w-10 rounded bg-gray-100 "></span>
                       <h2 class="text-gray-300 font-medium title-font tracking-wider text-sm">
                         Samuel Agyemang
                       </h2>
@@ -80,7 +80,7 @@ export default function Testionials() {
                     recommend Peaceful Dreament to anyone looking for a
                     polythene bag manufacturer.
        </p>
-                      <span class="inline-block h-1 w-10 rounded bg-gray-100 mt-8 mb-6"></span>
+                      <span class="inline-block h-1 w-10 rounded bg-gray-100  "></span>
                       <h2 class="text-gray-300 font-medium title-font tracking-wider text-sm">
                     Lewis Testimony
                       </h2>
