@@ -14,7 +14,7 @@ export default function Testionials() {
   return (
     <>
       <div
-        className="h-[50vh]"
+        className="h-[60vh]"
 
       >
         <Swiper
