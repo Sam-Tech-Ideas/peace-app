@@ -1,28 +1,26 @@
 import React from 'react'
 import { FaEnvelope, FaFacebook, FaFacebookF, FaInstagram, FaLinkedin } from 'react-icons/fa';
-
+import Iframe from "react-iframe";
 const Footer = () => {
   return (
-    <div>
+    <div className='flex-col justify-center items-center'>
       <footer class="text-gray-300 body-font bg-gray-800 flex justify-center items-center">
-        <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+        <div class="container px-5 py-12 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
           <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
             <div class="lg:w-1/4 md:w-1/2 w-full px-4">
               <h2 class="title-font font-medium text-gray-300 tracking-widest text-lg mb-3">
                 Contact
               </h2>
               <nav class="list-none mb-10">
-                <li className='py-2'>
-                  <a class="text-gray-300">
-                    Phone:{" "}
-                  </a>
-                  <a class="text-gray-300 hover:text-gray-800">233559911251</a>
+                <li className="py-2">
+                  <a class="text-gray-300">Phone: </a>
+                  <a class="text-gray-300 ">233559911251</a>
                 </li>
-                <li className='py-2'>
-                  <a class="text-gray-300 hover:text-blue-500 hover:cursor-pointer">
+                <li className="py-2">
+                  <a class="text-gray-300  hover:cursor-pointer">
                     Location:{" "}
                   </a>
-                  <a class="text-gray-300 hover:text-gray-800">Accra, Ghana</a>
+                  <a class="text-gray-300">Accra, Ghana</a>
                 </li>
               </nav>
             </div>
@@ -69,16 +67,20 @@ const Footer = () => {
           </div>
         </div>
       </footer>
+        
+      <div className='bg-gray-800 text-gray-300 text-center py-8'>
+        <p >
+        
+        Copyright 
+        &#169;2023 PeacefulDreament. Developed by Zap Technologies
+        
+        </p>
+      </div>
     </div>
   );
-}import Iframe from 'react-iframe'
-<Iframe url="https://www.sdrive.app/embed/1ptBQD"
-        width="640px"
-        height="320px"
-        id=""
-        className=""
-        display="block"
-        position="relative"/>
+}
+
+
 
 export default Footer
 

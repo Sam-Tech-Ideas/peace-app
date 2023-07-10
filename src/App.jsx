@@ -8,6 +8,7 @@ import Down from "./components/Down";
 import Stat from "./components/Stat";
 import Team from "./components/Team";
 import Contact from "./components/Home/Contact";
+import Testimonial from "./components/Home/Testionials";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Services />
         <Stat />
         <Team/>
+        <Testimonial/>
         <Contact/>
       
       </Layout>

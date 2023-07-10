@@ -149,7 +149,7 @@ const Services = () => {
   return (
     <div>
       <section class="text-gray-600 body-font">
-        <div class="container px-5 py-12 mx-auto">
+        <div class="container px-5 py-24 mx-auto">
           <div class="text-center mb-10">
             <div class="flex mt-6 justify-center py-3">
               <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
