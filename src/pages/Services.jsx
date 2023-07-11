@@ -11,21 +11,7 @@ const Services = () => {
       <section class="mb-40 ">
         <section class="text-gray-600 body-font">
           <div class="container px-5 py-24 mx-auto">
-            {/* <div class="text-center mb-20">
-              <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
-                The Best Polythene Bags Manufacturer in Ghana
-              </h1>
-              <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
-                As the leading polythene bags manufacturer in Ghana, we have
-                been in the business for over 20 years. We have a wide range of
-                products that are suitable for all your packaging needs. Our
-                products include: polythene bags, polythene sheets, polythene
-                rolls, polythene tubing, polythene shrink film, polythene
-              </p>
-              <div class="flex mt-6 justify-center">
-                <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
-              </div>
-            </div> */}
+           
             <div class="text-center mb-10">
               <div class="flex mt-6 justify-center py-3">
                 <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
