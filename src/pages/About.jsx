@@ -5,12 +5,12 @@ const About = () => {
     <div className="py-24">
       <div class="text-center  mb-14">
         <div class="flex mt-6 justify-center py-3">
-          <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
+          <div class="w-16 h-1 rounded-full bg-[#022D36] inline-flex"></div>
         </div>
-        <h1 class="sm:text-4xl text-3xl font-bold text-blue-500 mb-4">
+        <h1 class="sm:text-4xl text-3xl font-bold text-[#022D36] mb-4">
           About Us
         </h1>
-        <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s px-10">
+        <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-[#022D36] px-10">
           We are a leading manufacturer of polythene bags and other packaging
           materials in Ghana. We have been in operation for over 20 years and we
           have a wide range of products to meet the needs of our customers.
@@ -29,10 +29,10 @@ const About = () => {
               </div>
               <div class="w-full shrink-0 grow-0 basis-auto lg:w-6/12 xl:w-8/12">
                 <div class="px-6 py-6 md:px-12">
-                  <h2 class="mb-4 text-blue-500 text-2xl font-bold">
+                  <h2 class="mb-4 text-[#022d36] text-2xl font-bold">
                     The Best Polythene Bags Manufacturer in Ghana
                   </h2>
-                  <p class="mb-6 flex items-center font-bold uppercase text-blue-800 ">
+                  <p class="mb-6 flex items-center font-bold uppercase text-[#022D36]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -54,7 +54,7 @@ const About = () => {
                     </svg>
                     20 years of experience
                   </p>
-                  <p class="mb-6 text-neutral-500 dark:text-neutral-300">
+                  <p class="mb-6 text-[#022D36]">
                     As the leading polythene bags manufacturer in Ghana, we have
                     been in the business for over 20 years. We have a wide range
                     of products that are suitable for all your packaging needs.
@@ -67,7 +67,7 @@ const About = () => {
                     pallet bags, polythene shrink pallet sheets, polythene and a
                     lot more.
                   </p>
-                  <p class="mb-6 text-neutral-500 dark:text-neutral-300">
+                  <p class="mb-6 text-[#022D36]">
                     We are also available to provide you with custom made
                     polythene bags and other products to suit your needs. We
                     have a team of experts who will work with you to ensure that
