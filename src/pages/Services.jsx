@@ -9,30 +9,9 @@ const Services = () => {
   return (
     <div>
       <section class="mb-40 ">
-        <div
-          class="relative overflow-hidden bg-cover bg-no-repeat "
-          style={{
-            backgroundImage:
-              "url('https://mdbcdn.b-cdn.net/img/new/slides/146.webp')",
-            height: "40vh",
-            backgroundPosition: "50%",
-          }}
-        >
-          <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.75)] bg-fixed">
-            <div class="flex h-full items-center justify-center">
-              <div class="px-6 text-center text-white md:px-12">
-                <h1 class=" text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl py-2">
-                  OUR SERVICES
-                </h1>
-                <p>We are a leading manufacturer of polythene bags in Ghana.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <section class="text-gray-600 body-font">
           <div class="container px-5 py-24 mx-auto">
-            <div class="text-center mb-20">
+            {/* <div class="text-center mb-20">
               <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
                 The Best Polythene Bags Manufacturer in Ghana
               </h1>
@@ -46,6 +25,18 @@ const Services = () => {
               <div class="flex mt-6 justify-center">
                 <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
               </div>
+            </div> */}
+            <div class="text-center mb-10">
+              <div class="flex mt-6 justify-center py-3">
+                <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
+              </div>
+              <h1 class="sm:text-4xl text-3xl font-bold text-blue-500 mb-4">
+                Our Services
+              </h1>
+              <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
+                We provide the best services to our customers and we are always
+                ready to serve you with the best.
+              </p>
             </div>
             <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
               <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
