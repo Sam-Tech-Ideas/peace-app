@@ -3,6 +3,7 @@ import wave from ".././assets/wave.svg";
 import { FaHandHolding } from "react-icons/fa";
 import { BiWallet } from "react-icons/bi";
 import { CiDeliveryTruck } from "react-icons/ci";
+import Contact from "./Contact";
 
 
 const Services = () => {
@@ -71,6 +72,7 @@ const Services = () => {
             </div>
           </div>
         </section>
+        
       </section>
     </div>
   );

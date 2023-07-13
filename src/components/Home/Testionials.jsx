@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper/modules";
 
-export default function Testionials() {
+export default function Testimonials() {
   return (
     <>
       <div
