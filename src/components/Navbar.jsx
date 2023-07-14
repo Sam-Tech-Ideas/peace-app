@@ -1,5 +1,7 @@
 import { useState } from "react";
 import img from "../assets/peace.png";
+import { FaTimes } from "react-icons/fa";
+import { AiOutlineClose } from "react-icons/ai";
 
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
@@ -10,7 +12,7 @@ export default function NavBar() {
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <a href="javascript:void(0)">
-              <h2 className="text-XS items-center font-bold flex ">
+              <h2 className="text-xs sm:text-lg items-center font-bold flex ">
                  <img src={img} className="w-10 h-10" alt="logo" />
                 <span className="ml-2">PEACEFUL 
                  DREAMENT ENTERPRISE
@@ -19,22 +21,11 @@ export default function NavBar() {
             </a>
             <div className="md:hidden">
               <button
-                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 "
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
+                 <AiOutlineClose size={24}/>
                 ) : (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
