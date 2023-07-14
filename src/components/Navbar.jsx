@@ -12,8 +12,8 @@ export default function NavBar() {
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <a href="javascript:void(0)">
-              <h2 className="text-xs sm:text-lg items-center font-bold flex text-primary">
-                 <img src={img} className="w-10 h-10" alt="logo" />
+              <h2 className="text-sm sm:text-lg items-center font-bold flex text-primary">
+                 <img src={img} className="w-16 h-14" alt="logo" />
                 <span className="ml-2">PEACEFUL 
                  DREAMENT ENTERPRISE
                 </span>
