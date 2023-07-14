@@ -19,7 +19,7 @@ function Hero() {
         <div className="flex justify-center items-center h-screen">
           <div className="text-center  w-full">
             <h1 className="sm:text-5xl text-3xl font-bold leading-tight ">
-               Experience  the best of an enterprise <br /> like a peaceful dream
+               EXPERIENCE  THE SRVICES OF AN ENTERPRISE <br /> WITH  PEACEFUL DREAM.
             </h1>
             <p className="sm:text-xl py-4 text-md ">
                For the sake of our service no customer will leave and decide not to return. 
