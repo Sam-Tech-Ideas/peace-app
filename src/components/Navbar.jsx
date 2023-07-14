@@ -43,16 +43,16 @@ const Navbar = () => {
     <>
       <div className="w-screen shadow-lg fixed bg-white h-20 text-black z-20 mb-4 md:px-8">
         <div className="flex items-center justify-between w-full h-full md:px-8">
-          <div className="flex items-center py-14">
-            <img src={img} alt="" height="" width="" className="h-16" />
-            <span className="text-xl font-bold">PEACEFUL DREAMENT</span>
+          <div className="flex items-center py-14 p-1">
+            <img src={img} alt="" height="" width="" className="h-10" />
+            <span className="text-md font-bold">PEACEFUL DREAMENT</span>
           </div>
           <ul className="hidden md:flex">
             {links.map(({ id, link, url }) => (
               <li
                 key={id}
                 className={`p-4 hover:text-blue-600 duration-300 text-md cursor-pointer ${
-                  activeLink === url ? "text-blue-600" : ""
+                  activeLink === url ? "text-blue-600"  : ""
                 }`}
               >
                 {link === "Services" ? (
@@ -111,9 +111,7 @@ const Navbar = () => {
             <div className="flex items-center justify-between w-full text-black ">
               <img src={img} alt="" height="" width="" className="h-10 w-10" />
               <span className="text-sm font-bold">
-                <h1 className="text-xs">
-                  PEACEFUL DREAMENT
-                </h1>
+                <h1 className="text-xs">PEACEFUL DREAMENT</h1>
               </span>
 
               <div onClick={() => setNav(false)} className="cursor-pointer p-3">
@@ -146,16 +144,14 @@ const Navbar = () => {
                         </Link>
                         <Link to="/blog">
                           <MenuItem color="lightBlue" ripple="light">
-                          Blog/News
+                            Blog/News
                           </MenuItem>
                         </Link>
                       </MenuList>
                     </Menu>
                   ) : (
                     <Link to={url}>{link}</Link>
-                  )
-
-                        }
+                  )}
                 </li>
               ))}
             </ul>
