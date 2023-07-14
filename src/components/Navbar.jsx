@@ -1,51 +1,90 @@
-
-
-import React from "react";
-import { FaTimes } from "react-icons/fa";
+import React, { useState, useEffect } from "react";
+import { FaArrowDown, FaTimes } from "react-icons/fa";
 import { BiMenuAltRight } from "react-icons/bi";
-import { useState } from "react";
 import img from "../assets/peace.png";
-
+import { Link, useLocation } from "react-router-dom";
+import {
+  Menu,
+  MenuHandler,
+  MenuList,
+  MenuItem,
+  Button,
+} from "@material-tailwind/react";
+import { AiOutlineDown } from "react-icons/ai";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [activeLink, setActiveLink] = useState("");
+  const location = useLocation();
+
   const links = [
     {
       id: 1,
       link: "Home",
+      url: "/",
     },
     {
       id: 2,
       link: "About Us",
+      url: "/about",
     },
     {
       id: 3,
       link: "Services",
+      url: "/services",
     },
   ];
+
+  useEffect(() => {
+    const currentPath = location.pathname;
+    setActiveLink(currentPath);
+  }, [location.pathname]);
+
   return (
     <>
-      <div className=" w-screen shadow-lg  fixed bg-white  h-20 text-black z-20  mb-4 md:px-8">
+      <div className="w-screen shadow-lg fixed bg-white h-20 text-black z-20 mb-4 md:px-8">
         <div className="flex items-center justify-between w-full h-full md:px-8">
-          <div className="flex items-center   py-14">
-            <img src={img} alt="" height="" width="" className="h-16 " />
-            <span className="text-xl font-bold">
-           PEACEFUL DREAMENT
-            </span>
+          <div className="flex items-center py-14">
+            <img src={img} alt="" height="" width="" className="h-16" />
+            <span className="text-xl font-bold">PEACEFUL DREAMENT</span>
           </div>
           <ul className="hidden md:flex">
-            {links.map(({ id, link }) => (
+            {links.map(({ id, link, url }) => (
               <li
                 key={id}
-                className="p-4 hover:text-blue-600 duration-300 text-md cursor-pointer"
+                className={`p-4 hover:text-blue-600 duration-300 text-md cursor-pointer ${
+                  activeLink === url ? "text-blue-600" : ""
+                }`}
               >
-                {link}
+                {link === "Services" ? (
+                  <Menu>
+                    <MenuHandler>
+                      <Button className="shadow-none bg-transparent text-black text-md  font-medium capitalize m-0 p-0 hover:shadow-none hover:text-blue-500">
+                        {link}
+                        <AiOutlineDown className="inline-block ml-2" />
+                      </Button>
+                    </MenuHandler>
+                    <MenuList>
+                      <Link to="/services">
+                        <MenuItem color="lightBlue" ripple="light">
+                          Services
+                        </MenuItem>
+                      </Link>
+                      <Link to="/blog">
+                        <MenuItem color="lightBlue" ripple="light">
+                          Blog/News
+                        </MenuItem>
+                      </Link>
+                    </MenuList>
+                  </Menu>
+                ) : (
+                  <Link to={url}>{link}</Link>
+                )}
               </li>
             ))}
           </ul>
-         
 
           <div
-            className=" md:hidden cursor-pointer p-8"
+            className="md:hidden cursor-pointer p-8"
             onClick={() => {
               setNav(true);
             }}
@@ -54,7 +93,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/**menu */}
+        {/* menu */}
         <div
           className={
             nav
@@ -71,25 +110,51 @@ const Navbar = () => {
           >
             <div className="flex items-center justify-between w-full text-black ">
               <img src={img} alt="" height="" width="" className="h-20 w-10" />
-              <span className="text-xl font-bold">
-                PEACEFUL DREAMENT
-              </span>
+              <span className="text-xl font-bold">PEACEFUL DREAMENT</span>
 
               <div onClick={() => setNav(false)} className="cursor-pointer p-3">
-                <FaTimes size={30} />
+                <Link to="/">
+                  <FaTimes size={30} />
+                </Link>
               </div>
             </div>
             <ul className="pt-10">
-              {links.map(({ id, link }) => (
+              {links.map(({ id, link, url }) => (
                 <li
                   key={id}
-                  className="p-4 hover:text-blue-600 duration-300 text-lg cursor-pointer"
+                  className={`p-4 hover:text-blue-600 duration-300 text-lg cursor-pointer ${
+                    activeLink === url ? "text-blue-600" : ""
+                  }`}
                 >
-                  {link}
+                  {link === "Services" ? (
+                    <Menu>
+                      <MenuHandler>
+                        <Button className="shadow-none bg-transparent text-black text-md  font-medium capitalize m-0 p-0 hover:shadow-none hover:text-blue-500">
+                          {link}
+                          <AiOutlineDown className="inline-block ml-2" />
+                        </Button>
+                      </MenuHandler>
+                      <MenuList>
+                        <Link to="/services">
+                          <MenuItem color="lightBlue" ripple="light">
+                            Services
+                          </MenuItem>
+                        </Link>
+                        <Link to="/blog">
+                          <MenuItem color="lightBlue" ripple="light">
+                          Blog/News
+                          </MenuItem>
+                        </Link>
+                      </MenuList>
+                    </Menu>
+                  ) : (
+                    <Link to={url}>{link}</Link>
+                  )
+
+                        }
                 </li>
               ))}
             </ul>
-           
           </div>
         </div>
       </div>

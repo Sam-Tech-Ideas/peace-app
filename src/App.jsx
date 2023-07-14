@@ -16,17 +16,16 @@ import Home from "./pages/Home";
 const App = () => {
   return (
     <div className="max-w-screen">
-      <Layout>
-        <BrowserRouter>
+      <BrowserRouter>
+        <Layout>
           <Routes>
-            <Route path="/" element={<Home />} />  
-            </Routes>
-
-        </BrowserRouter>
-        
-        
-      
-      </Layout>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/blog" element={<Blog />} />
+          </Routes>
+        </Layout>
+      </BrowserRouter>
     </div>
   );
 };

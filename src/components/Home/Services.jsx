@@ -148,16 +148,16 @@ import {
 const Services = () => {
   return (
     <div>
-      <section class="text-gray-600 body-font">
+      <section class="text-primary body-font">
         <div class="container px-5 py-24 mx-auto">
           <div class="text-center mb-10">
             <div class="flex mt-6 justify-center py-3">
               <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
             </div>
-            <h1 class="sm:text-4xl text-3xl font-bold text-gray-900 mb-4">
+            <h1 class="sm:text-4xl text-3xl font-bold text-primary mb-4">
               Our Services
             </h1>
-            <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
+            <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-primary">
               We provide the best services to our customers and we are always
               ready to serve you with the best.
             </p>
@@ -172,7 +172,7 @@ const Services = () => {
                     alt="blog"
                   />
                   <div class="p-6">
-                    <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                    <h1 class="title-font text-lg font-medium text-primary mb-3">
                       The Market place delivery
                     </h1>
 

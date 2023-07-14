@@ -4,16 +4,16 @@ import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 const Team = () => {
   return (
     <div>
-      <section class="text-gray-600 body-font">
+      <section class="text-primary body-font">
         <div class="container px-5 py-24 mx-auto">
           <div class="text-center mb-10">
             <div class="flex mt-6 justify-center py-3">
-              <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
+              <div class="w-16 h-1 rounded-full bg-primary inline-flex"></div>
             </div>
-            <h1 class="sm:text-4xl text-3xl font-bold text-gray-900 mb-4">
+            <h1 class="sm:text-4xl text-3xl font-bold text-primary mb-4">
               Our Team
             </h1>
-            <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
+            <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-primarys">
               Meet the team behind the success of our prestigious company.
             </p>
           </div>
@@ -43,10 +43,10 @@ const Team = () => {
                   </div>
                 </div>
                 <div class="w-full py-2">
-                  <h2 class="title-font font-medium text-lg text-gray-900">
+                  <h2 class="title-font font-medium text-lg text-primary">
                 EUNICE BAAFI
                   </h2>
-                  <h3 class="text-gray-500 mb-3">
+                  <h3 class="text-primary mb-3">
                     CHIEF EXECUTIVE OFFICER (PLASTICS)
                   </h3>
                
@@ -78,12 +78,12 @@ const Team = () => {
                   </div>
                 </div>
                 <div class="w-full py-2">
-                  <h2 class="title-font font-medium text-lg text-gray-900">
+                  <h2 class="title-font font-medium text-lg text-primary">
                     LEWIS BAAFI
                   </h2>
-                  <h3 class="text-gray-500 mb-3">PRESIDENT</h3>
-                  <h3 class="text-gray-500 mb-3">DIGITAL CONTENT MANAGER</h3>
-                  <h3 class="text-gray-500 mb-3">MARKETING DIRECTOR</h3>
+                  <h3 class="text-primary mb-3">PRESIDENT</h3>
+                  <h3 class="text-primary mb-3">DIGITAL CONTENT MANAGER</h3>
+                  <h3 class="text-primary mb-3">MARKETING DIRECTOR</h3>
                 </div>
               </div>
             </div>
@@ -112,10 +112,10 @@ const Team = () => {
                   </div>
                 </div>
                 <div class="w-full py-2">
-                  <h2 class="title-font font-medium text-lg text-gray-900">
+                  <h2 class="title-font font-medium text-lg text-primary">
                     STEPHEN BAAFI
                   </h2>
-                  <h3 class="text-gray-500 mb-3">
+                  <h3 class="text-primary mb-3">
                     CHIEF EXECUTIVE DIRECTOR (B. Hardware)
                   </h3>
                     </div>
@@ -146,10 +146,10 @@ const Team = () => {
                   </div>
                 </div>
                 <div class="w-full py-2">
-                  <h2 class="title-font font-medium text-lg text-gray-900">
+                  <h2 class="title-font font-medium text-lg text-primary">
                    JESSICA BAAFI
                   </h2>
-                  <h3 class="text-gray-500 mb-3">
+                  <h3 class="text-primary mb-3">
                      VICE
                     PRESIDENT</h3>
     </div>
@@ -180,10 +180,10 @@ const Team = () => {
                   </div>
                 </div>
                 <div class="w-full py-2">
-                  <h2 class="title-font font-medium text-lg text-gray-900">
+                  <h2 class="title-font font-medium text-lg text-primary">
                    MAGRET
                   </h2>
-                  <h3 class="text-gray-500 mb-3">
+                  <h3 class="text-primary mb-3">
                      MANAGING DIRECTOR RETAIL & WHOLESALE
                   </h3>
                      </div>
@@ -214,10 +214,10 @@ const Team = () => {
                   </div>
                 </div>
                 <div class="w-full py-2">
-                  <h2 class="title-font font-medium text-lg text-gray-900">
+                  <h2 class="title-font font-medium text-lg text-primary">
                   FOSTER
                   </h2>
-                  <h3 class="text-gray-500 mb-3">
+                  <h3 class="text-primary mb-3">
                      MANAGING DIRECTOR RETAIL & WHOLESALE
                   </h3>
                       </div>
