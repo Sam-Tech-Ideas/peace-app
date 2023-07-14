@@ -68,7 +68,7 @@ const Footer = () => {
         </div>
       </footer>
         
-      <div className='bg-gray-800 text-gray-300 text-center py-8'>
+      <div className='bg-gray-800 text-gray-300 text-center py-8 px-6'>
         <p >
         
         Copyright 
