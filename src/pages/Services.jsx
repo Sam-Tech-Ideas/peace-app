@@ -10,14 +10,14 @@ const Services = () => {
   return (
     <div>
       <section class="mb-40 ">
-        <section class="text-gray-600 body-font">
+        <section class="text-primary body-font">
           <div class="container px-5 py-24 mx-auto">
            
             <div class="text-center mb-10">
               <div class="flex mt-6 justify-center py-3">
                 <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
               </div>
-              <h1 class="sm:text-4xl text-3xl font-bold text-blue-500 mb-4">
+              <h1 class="sm:text-4xl text-3xl font-bold text-primary mb-4">
                 Our Services
               </h1>
               <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">

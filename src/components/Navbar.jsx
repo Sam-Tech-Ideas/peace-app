@@ -109,8 +109,12 @@ const Navbar = () => {
             }
           >
             <div className="flex items-center justify-between w-full text-black ">
-              <img src={img} alt="" height="" width="" className="h-20 w-10" />
-              <span className="text-xl font-bold">PEACEFUL DREAMENT</span>
+              <img src={img} alt="" height="" width="" className="h-10 w-10" />
+              <span className="text-sm font-bold">
+                <h1 className="text-xs">
+                  PEACEFUL DREAMENT
+                </h1>
+              </span>
 
               <div onClick={() => setNav(false)} className="cursor-pointer p-3">
                 <Link to="/">
