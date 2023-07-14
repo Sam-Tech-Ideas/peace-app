@@ -3,7 +3,7 @@
 const posts = [
   {
     id: 1,
-    title: "Plastics",
+    title: "Building Hardware",
     href: "https://instagram.com/peacefuldreamenterprise?igshid=MzRlODBiNWFlZA==",
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
@@ -20,8 +20,8 @@ const posts = [
   },
   {
     id: 2,
-    title: "Building Hardware",
-    href: "",
+    title: "PLastic Sales",
+    href: "https://instagram.com/peaceful_dream_plastics?igshid=MzRlODBiNWFlZA==",
     description:
       "Our  buitkewkhjlding hardware is made from recycled plastic and is 100% recyclable",
 
