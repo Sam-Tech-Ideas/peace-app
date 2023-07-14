@@ -1,165 +1,83 @@
-import React, { useState, useEffect } from "react";
-import { FaArrowDown, FaTimes } from "react-icons/fa";
-import { BiMenuAltRight } from "react-icons/bi";
+import { useState } from "react";
 import img from "../assets/peace.png";
-import { Link, useLocation } from "react-router-dom";
-import {
-  Menu,
-  MenuHandler,
-  MenuList,
-  MenuItem,
-  Button,
-} from "@material-tailwind/react";
-import { AiOutlineClose, AiOutlineDown } from "react-icons/ai";
-const Navbar = () => {
-  const [nav, setNav] = useState(false);
-  const [activeLink, setActiveLink] = useState("");
-  const location = useLocation();
 
-  const links = [
-    {
-      id: 1,
-      link: "Home",
-      url: "/",
-    },
-    {
-      id: 2,
-      link: "About Us",
-      url: "/about",
-    },
-    {
-      id: 3,
-      link: "Services",
-      url: "/services",
-    },
-  ];
-
-  useEffect(() => {
-    const currentPath = location.pathname;
-    setActiveLink(currentPath);
-  }, [location.pathname]);
+export default function NavBar() {
+  const [navbar, setNavbar] = useState(false);
 
   return (
-    <>
-      <div className="w-screen shadow-lg fixed bg-white h-20 text-black z-20 mb-4 md:px-8">
-        <div className="flex items-center justify-between w-full h-full md:px-8">
-          <div className="flex items-center py-14 p-1">
-            <img src={img} alt="" height="" width="" className="h-10" />
-            <span className="text-md font-bold">PEACEFUL DREAMENT</span>
-          </div>
-          <ul className="hidden md:flex">
-            {links.map(({ id, link, url }) => (
-              <li
-                key={id}
-                className={`p-4 hover:text-blue-600 duration-300 text-md cursor-pointer ${
-                  activeLink === url ? "text-blue-600"  : ""
-                }`}
+    <nav className="w-full bg-white shadow">
+      <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+        <div>
+          <div className="flex items-center justify-between py-3 md:py-5 md:block">
+            <a href="javascript:void(0)">
+              <h2 className="text-XS items-center font-bold flex ">
+                 <img src={img} className="w-10 h-10" alt="logo" />
+                <span className="ml-2">PEACEFUL 
+                 DREAMENT ENTERPRISE
+                </span>
+                </h2>
+            </a>
+            <div className="md:hidden">
+              <button
+                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                onClick={() => setNavbar(!navbar)}
               >
-                {link === "Services" ? (
-                  <Menu>
-                    <MenuHandler>
-                      <Button className="shadow-none bg-transparent text-black text-md  font-medium capitalize m-0 p-0 hover:shadow-none hover:text-blue-500">
-                        {link}
-                        <AiOutlineDown className="inline-block ml-2" />
-                      </Button>
-                    </MenuHandler>
-                    <MenuList>
-                      <Link to="/services">
-                        <MenuItem color="lightBlue" ripple="light">
-                          Services
-                        </MenuItem>
-                      </Link>
-                      <Link to="/blog">
-                        <MenuItem color="lightBlue" ripple="light">
-                          Blog/News
-                        </MenuItem>
-                      </Link>
-                    </MenuList>
-                  </Menu>
+                {navbar ? (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-6 h-6"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
                 ) : (
-                  <Link to={url}>{link}</Link>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-6 h-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
                 )}
-              </li>
-            ))}
-          </ul>
-
-          <div
-            className="md:hidden cursor-pointer p-8"
-            onClick={() => {
-              setNav(true);
-            }}
-          >
-            <BiMenuAltRight size={30} />
+              </button>
+            </div>
           </div>
         </div>
-
-        {/* menu */}
-        <div
-          className={
-            nav
-              ? "md:hidden fixed left-0 top-0 w-full h-full bg-gray-600/70 backdrop-blur"
-              : ""
-          }
-        >
+        <div>
           <div
-            className={
-              nav
-                ? "shadow-xl fixed left-0 top-0 w-4/5 bg-white text-black h-full p-10 ease-in duration-300"
-                : "fixed top-0 left-[-100%] p-10 duration-300 ease-in h-full "
-            }
+            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+              navbar ? "block" : "hidden"
+            }`}
           >
-            <div className="flex items-center justify-between w-full text-black ">
-              <img src={img} alt="" height="" width="" className="h-10 w-" />
-              <span className="text-xs font-bold ">
-              PEACEFUL DREAMENT
-              </span>
-
-              <div onClick={() => setNav(false)} className="cursor-pointer p-3">
-                <Link to="/">
-                  <AiOutlineClose size={20} color="gray"  className="font-light"/>
-                </Link>
-              </div>
-            </div>
-            <ul className="pt-10">
-              {links.map(({ id, link, url }) => (
-                <li
-                  key={id}
-                  className={`p-4 hover:text-blue-600 duration-300 text-lg cursor-pointer ${
-                    activeLink === url ? "text-blue-600" : ""
-                  }`}
-                >
-                  {link === "Services" ? (
-                    <Menu>
-                      <MenuHandler>
-                        <Button className="shadow-none bg-transparent text-black text-md  font-medium capitalize m-0 p-0 hover:shadow-none hover:text-blue-500">
-                          {link}
-                          <AiOutlineDown className="inline-block ml-2" />
-                        </Button>
-                      </MenuHandler>
-                      <MenuList>
-                        <Link to="/services">
-                          <MenuItem color="lightBlue" ripple="light">
-                            Services
-                          </MenuItem>
-                        </Link>
-                        <Link to="/blog">
-                          <MenuItem color="lightBlue" ripple="light">
-                            Blog/News
-                          </MenuItem>
-                        </Link>
-                      </MenuList>
-                    </Menu>
-                  ) : (
-                    <Link to={url}>{link}</Link>
-                  )}
-                </li>
-              ))}
+            <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+              <li className="text-gray-600 hover:text-blue-600">
+                <a href="javascript:void(0)">Home</a>
+              </li>
+              <li className="text-gray-600 hover:text-blue-600">
+                <a href="javascript:void(0)">Blog</a>
+              </li>
+              <li className="text-gray-600 hover:text-blue-600">
+                <a href="javascript:void(0)">About US</a>
+              </li>
+              <li className="text-gray-600 hover:text-blue-600">
+                <a href="javascript:void(0)">Services</a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
-    </>
+    </nav>
   );
-};
-
-export default Navbar;
+}
