@@ -10,7 +10,7 @@ import {
   MenuItem,
   Button,
 } from "@material-tailwind/react";
-import { AiOutlineDown } from "react-icons/ai";
+import { AiOutlineClose, AiOutlineDown } from "react-icons/ai";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [activeLink, setActiveLink] = useState("");
@@ -109,14 +109,14 @@ const Navbar = () => {
             }
           >
             <div className="flex items-center justify-between w-full text-black ">
-              <img src={img} alt="" height="" width="" className="h-10 w-10" />
+              <img src={img} alt="" height="" width="" className="h-10 w-" />
               <span className="text-xs font-bold ">
               PEACEFUL DREAMENT
               </span>
 
               <div onClick={() => setNav(false)} className="cursor-pointer p-3">
                 <Link to="/">
-                  <FaTimes size={30} />
+                  <AiOutlineClose size={20} color="gray"  className="font-light"/>
                 </Link>
               </div>
             </div>
