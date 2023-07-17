@@ -15,7 +15,7 @@ function Hero() {
     const interval = setInterval(() => {
       // Increase the currentImageIndex by 1
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 8000); // Change the background image every 5 seconds
+    }, 10000); // Change the background image every 5 seconds
 
     return () => clearInterval(interval);
   }, [images.length]);
