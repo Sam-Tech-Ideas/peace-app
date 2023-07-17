@@ -78,7 +78,7 @@ export default function NavBar() {
               {links.map((link) => (
                 <li key={link.id}>
                   <Link
-                    href={link.url}
+                    to={link.url}
                     className="text-base font-medium text-priamry hover:text-blue-500"
                   >
                     {link.text}
