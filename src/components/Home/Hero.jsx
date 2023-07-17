@@ -15,7 +15,7 @@ function Hero() {
     const interval = setInterval(() => {
       // Increase the currentImageIndex by 1
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 10000); // Change the background image every 5 seconds
+    }, 9000); // Change the background image every 5 seconds
 
     return () => clearInterval(interval);
   }, [images.length]);
@@ -27,7 +27,7 @@ function Hero() {
 
   return (
     <div
-      className=" h-screen text-white"
+      className=" h-screen text-white transition-background-image"
       style={{
         backgroundImage:
           `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${currentImage})`,
