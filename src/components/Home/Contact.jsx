@@ -4,26 +4,26 @@ import Iframe from 'react-iframe';
 const Contact = () => {
   return (
     <div>
-      <section class="text-gray-600 body-font relative">
+      <section class="text-primary body-font relative">
         <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
           <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8  md:mt-0">
             
 
             <div class=" mb-10">
               <div class=" py-3">
-                <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
+                <div class="w-16 h-1 rounded-full bg-primary inline-flex"></div>
               </div>
               <h1 class="sm:text-4xl text-3xl font-bold text-gray-900 mb-4">
                 Get In Touch
               </h1>
-              <p class="leading-relaxed mb-5 text-gray-600">
+              <p class="leading-relaxed mb-5 text-primary">
                 We are here to answer any questions you may have about our
                 services. Reach out to us and we'll respond as soon as we can.
               </p>
              
             </div>
             <div class="relative mb-4">
-              <label for="name" class="leading-7 text-sm text-gray-600">
+              <label for="name" class="leading-7 text-sm text-primary">
                 Name
               </label>
               <input
@@ -34,7 +34,7 @@ const Contact = () => {
               />
             </div>
             <div class="relative mb-4">
-              <label for="email" class="leading-7 text-sm text-gray-600">
+              <label for="email" class="leading-7 text-sm text-primary">
                 Email
               </label>
               <input
@@ -45,7 +45,7 @@ const Contact = () => {
               />
             </div>
             <div class="relative mb-4">
-              <label for="message" class="leading-7 text-sm text-gray-600">
+              <label for="message" class="leading-7 text-sm text-primary">
                 Message
               </label>
               <textarea
