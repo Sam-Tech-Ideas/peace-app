@@ -1,13 +1,36 @@
-import React from "react";
-import img from "../../assets/back.jpg";
+import React, { useEffect } from "react";
+
+
 
 function Hero() {
+  const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
+  const images = [
+    "https://firebasestorage.googleapis.com/v0/b/peace-app-3bfd7.appspot.com/o/M2.JPG?alt=media&token=41c9d09c-3952-4588-b8b0-25f15ec4870b",
+    "https://firebasestorage.googleapis.com/v0/b/peace-app-3bfd7.appspot.com/o/M3.JPG?alt=media&token=4b01d880-2e1e-402c-bc42-52e03d193326",
+    "https://firebasestorage.googleapis.com/v0/b/peace-app-3bfd7.appspot.com/o/M5.jpg?alt=media&token=c17d3a64-cc78-4b9c-9915-63886ada9701",
+    "https://firebasestorage.googleapis.com/v0/b/peace-app-3bfd7.appspot.com/o/M4.JPG?alt=media&token=1f0a5558-1c5a-4c31-bdc7-6d000b005aa3",
+  ];
+
+ useEffect(() => {
+    const interval = setInterval(() => {
+      // Increase the currentImageIndex by 1
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 8000); // Change the background image every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [images.length]);
+
+ const currentImage = images[currentImageIndex];
+
+
+   
+
   return (
     <div
       className=" h-screen text-white"
       style={{
         backgroundImage:
-          "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://firebasestorage.googleapis.com/v0/b/fdsproject-430e7.appspot.com/o/imagesPersoal%2Fback.jpg?alt=media&token=4b7c030b-c96d-42aa-a38c-30bcaddb50c9)",
+          `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${currentImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         height: "90vh",
