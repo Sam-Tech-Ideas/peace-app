@@ -2,6 +2,7 @@ import { useState } from "react";
 import img from "../assets/peace.png";
 import { FaTimes } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
@@ -76,12 +77,12 @@ export default function NavBar() {
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               {links.map((link) => (
                 <li key={link.id}>
-                  <a
+                  <Link
                     href={link.url}
                     className="text-base font-medium text-priamry hover:text-blue-500"
                   >
                     {link.text}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
