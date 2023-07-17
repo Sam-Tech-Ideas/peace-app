@@ -15,19 +15,19 @@ const Services = () => {
            
             <div class="text-center mb-10">
               <div class="flex mt-6 justify-center py-3">
-                <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
+                <div class="w-16 h-1 rounded-full bg-primary inline-flex"></div>
               </div>
               <h1 class="sm:text-4xl text-3xl font-bold text-primary mb-4">
                 Our Services
               </h1>
-              <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
+              <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-primary">
                 We provide the best services to our customers and we are always
                 ready to serve you with the best.
               </p>
             </div>
             <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
               <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
-                <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-blue-500 mb-5 flex-shrink-0">
+                <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-primary mb-5 flex-shrink-0">
                   <FaHandHolding size={40} className="" />
                 </div>
                 <div class="flex-grow">
@@ -41,7 +41,7 @@ const Services = () => {
                 </div>
               </div>
               <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
-                <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-blue-500 mb-5 flex-shrink-0">
+                <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-primary mb-5 flex-shrink-0">
                   <BiWallet size={40} className="" />
                 </div>
                 <div class="flex-grow">
@@ -55,7 +55,7 @@ const Services = () => {
                 </div>
               </div>
               <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
-                <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-blue-500 mb-5 flex-shrink-0">
+                <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-primary mb-5 flex-shrink-0">
                   <CiDeliveryTruck size={40} className="" />
                 </div>
                 <div class="flex-grow">
