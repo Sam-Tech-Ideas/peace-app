@@ -76,7 +76,9 @@ export default function NavBar() {
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               {links.map((link) => (
-                <li key={link.id}>
+                <li key={link.id} onClick={
+                  () => setNavbar(!navbar)
+                }>
                   <Link
                     to={link.url}
                     className="text-base font-medium text-priamry hover:text-blue-500"
