@@ -12,6 +12,7 @@ import About from "./pages/About";
 import Blog from "./pages/Blog";
 import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
 import Home from "./pages/Home";
+import Success from "./components/Success";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
             <Route path="/services" element={<Services/>} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/success" element={<Success />} />
             
           </Routes>
         </Layout>

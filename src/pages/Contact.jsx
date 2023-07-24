@@ -1,6 +1,15 @@
 import React from 'react'
 
 const Contact = () => {
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [name, setName] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(email, message, name);
+  };
+  
   return (
     <div>
       <section class="relative bg-[url(https://images.unsplash.com/photo-1623625434462-e5e42318ae49?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG9zdGVsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60)] bg-cover bg-center bg-no-repeat">

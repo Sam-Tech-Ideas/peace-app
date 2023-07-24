@@ -81,9 +81,9 @@ const Team = () => {
                   <h2 class="title-font font-medium text-lg text-primary">
                     LEWIS BAAFI
                   </h2>
-                  <h3 class="text-primary mb-3">PRESIDENT</h3>
-                  <h3 class="text-primary mb-3">DIGITAL CONTENT MANAGER</h3>
-                  <h3 class="text-primary mb-3">MARKETING DIRECTOR</h3>
+                  <h3 class="text-primary mb-3">PRESIDENT & DIGITAL CONTENT MANAGAER & MARKETING DIRECTOR</h3>
+                  {/* <h3 class="text-primary mb-3">DIGITAL CONTENT MANAGER</h3>
+                  <h3 class="text-primary mb-3">MARKETING DIRECTOR</h3> */}
                 </div>
               </div>
             </div>
