@@ -1,11 +1,12 @@
 import { useState } from "react";
+import { useLocation, Link } from "react-router-dom";
 import img from "../assets/peace.png";
 import { FaTimes } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
-import { Link } from "react-router-dom";
 
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
+  const location = useLocation();
 
   const links = [
     {
@@ -70,15 +71,19 @@ export default function NavBar() {
         </div>
         <div>
           <div
-            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+            className={`flex-1 justify-self-center pb-3 mt-8 md:block duration-750 md:pb-0 md:mt-0 ${
               navbar ? "block" : "hidden"
             }`}
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               {links.map((link) => (
-                <li key={link.id} onClick={
-                  () => setNavbar(!navbar)
-                }>
+                <li
+                  key={link.id}
+                  onClick={() => setNavbar(!navbar)}
+                  className={`${
+                    location.pathname === link.url ? "active-link " : ""
+                  }`}
+                >
                   <Link
                     to={link.url}
                     className="text-base font-medium text-priamry hover:text-blue-500"

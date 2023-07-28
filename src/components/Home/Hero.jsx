@@ -5,10 +5,10 @@ import React, { useEffect } from "react";
 function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
   const images = [
-    "https://firebasestorage.googleapis.com/v0/b/peace-app-3bfd7.appspot.com/o/M2.JPG?alt=media&token=41c9d09c-3952-4588-b8b0-25f15ec4870b",
-    "https://firebasestorage.googleapis.com/v0/b/peace-app-3bfd7.appspot.com/o/M3.JPG?alt=media&token=4b01d880-2e1e-402c-bc42-52e03d193326",
-    "https://firebasestorage.googleapis.com/v0/b/peace-app-3bfd7.appspot.com/o/M5.jpg?alt=media&token=c17d3a64-cc78-4b9c-9915-63886ada9701",
-    "https://firebasestorage.googleapis.com/v0/b/peace-app-3bfd7.appspot.com/o/M4.JPG?alt=media&token=1f0a5558-1c5a-4c31-bdc7-6d000b005aa3",
+    "https://firebasestorage.googleapis.com/v0/b/peaceful-d5db9.appspot.com/o/M2.JPG?alt=media&token=c6dcf635-cf06-4eec-9376-c55f52499bc8",
+    "https://firebasestorage.googleapis.com/v0/b/peaceful-d5db9.appspot.com/o/M3.JPG?alt=media&token=a24e0957-7325-4633-91ce-df7610868476",
+    "https://firebasestorage.googleapis.com/v0/b/peaceful-d5db9.appspot.com/o/M4.JPG?alt=media&token=68ccaa1a-f150-4737-9752-16e11748504c",
+    
   ];
 
  useEffect(() => {

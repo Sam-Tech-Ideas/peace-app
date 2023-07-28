@@ -1,5 +1,5 @@
 import React from "react";
-import Contact from "./Contact";
+import Contact from "./ContactPage";
 
 const About = () => {
   return (
@@ -83,7 +83,6 @@ const About = () => {
             </div>
           </div>
         </section>
-      
       </div>
     </div>
   );

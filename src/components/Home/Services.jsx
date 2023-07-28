@@ -168,7 +168,7 @@ const Services = () => {
                 <div class="h-full  border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                   <img
                     class="lg:h-64 md:h-36 w-full object-cover object-center"
-                    src="https://firebasestorage.googleapis.com/v0/b/peace-app-3bfd7.appspot.com/o/M4.JPG?alt=media&token=1f0a5558-1c5a-4c31-bdc7-6d000b005aa3"
+                    src="https://firebasestorage.googleapis.com/v0/b/peaceful-d5db9.appspot.com/o/M4.JPG?alt=media&token=68ccaa1a-f150-4737-9752-16e11748504c"
                     alt="blog"
                   />
                   <div class="p-6">
@@ -182,7 +182,7 @@ const Services = () => {
                 <div class="h-full border-opacity-60 rounded-lg overflow-hidden">
                   <img
                     class="lg:h-64 md:h-36 w-full object-cover object-center"
-                    src="https://firebasestorage.googleapis.com/v0/b/peace-app-3bfd7.appspot.com/o/M3.JPG?alt=media&token=4b01d880-2e1e-402c-bc42-52e03d193326"
+                    src="https://firebasestorage.googleapis.com/v0/b/peaceful-d5db9.appspot.com/o/Main.JPEG?alt=media&token=d009b85d-bf8c-4e62-b34a-c1266128607c"
                     alt="blog"
                   />
                   <div class="p-6">
@@ -198,7 +198,8 @@ const Services = () => {
                 <div class="h-full  border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                   <img
                     class="lg:h-64 md:h-36 w-full object-cover object-center"
-                    src="https://firebasestorage.googleapis.com/v0/b/peace-app-3bfd7.appspot.com/o/M5.jpg?alt=media&token=c17d3a64-cc78-4b9c-9915-63886ada9701"
+                    src="
+https://firebasestorage.googleapis.com/v0/b/peaceful-d5db9.appspot.com/o/M3.JPG?alt=media&token=a24e0957-7325-4633-91ce-df7610868476"
                     alt="blog"
                   />
                   <div class="p-6">

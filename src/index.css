@@ -65,6 +65,25 @@ body {
 }
 
 
+
+
+@media (min-width: 768px) {
+  .active-link{
+    padding: 5px 0 5px 0;
+    border-bottom: 2px solid blue;
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .active-link{
+    color: blue;
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+
 .spinner {
    width: 26px;
    height: 26px;

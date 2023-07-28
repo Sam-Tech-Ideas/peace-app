@@ -3,8 +3,7 @@ import wave from ".././assets/wave.svg";
 import { FaHandHolding } from "react-icons/fa";
 import { BiWallet } from "react-icons/bi";
 import { CiDeliveryTruck } from "react-icons/ci";
-import Contact from "./Contact";
-
+import Contact from "./ContactPage";
 
 const Services = () => {
   return (
@@ -12,7 +11,6 @@ const Services = () => {
       <section class="mb-40 ">
         <section class="text-primary body-font">
           <div class="container px-5 py-24 mx-auto">
-           
             <div class="text-center mb-10">
               <div class="flex mt-6 justify-center py-3">
                 <div class="w-16 h-1 rounded-full bg-primary inline-flex"></div>
@@ -25,8 +23,8 @@ const Services = () => {
                 ready to serve you with the best.
               </p>
             </div>
-            <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
-              <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+            <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6 ">
+              <div class="border rounded-xl hover:shadow-lg p-4 md:w-1/3 flex flex-col text-center items-center">
                 <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-primary mb-5 flex-shrink-0">
                   <FaHandHolding size={40} className="" />
                 </div>
@@ -40,7 +38,7 @@ const Services = () => {
                   </p>
                 </div>
               </div>
-              <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+              <div class="border rounded-xl hover:shadow-lg p-4 md:w-1/3 flex flex-col text-center items-center">
                 <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-primary mb-5 flex-shrink-0">
                   <BiWallet size={40} className="" />
                 </div>
@@ -54,7 +52,7 @@ const Services = () => {
                   </p>
                 </div>
               </div>
-              <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+              <div class="border rounded-xl hover:shadow-lg  p-4 md:w-1/3 flex flex-col text-center items-center">
                 <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-primary mb-5 flex-shrink-0">
                   <CiDeliveryTruck size={40} className="" />
                 </div>
@@ -72,7 +70,6 @@ const Services = () => {
             </div>
           </div>
         </section>
-        
       </section>
     </div>
   );
