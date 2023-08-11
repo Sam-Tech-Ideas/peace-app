@@ -25,7 +25,7 @@ module.exports = {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
     "./node_modules/@material-tailwind/react/dist/**/*.{vue,js,ts,jsx,tsx}",
   ],
-  darkMode: false, // or 'media' or 'class'
+   // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
