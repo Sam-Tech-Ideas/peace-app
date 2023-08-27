@@ -32,13 +32,34 @@ export default function NavBar() {
   ];
 
   return (
-    <nav className="w-full bg-white shadow">
-      <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+    <nav
+      className="w-full  h-[90vh]  bg-cover bg-center bg-no-repeat"
+      style={{
+        //backgroundImage: `url("https://firebasestorage.googleapis.com/v0/b/peaceful-d5db9.appspot.com/o/M2.JPG?alt=media&token=c6dcf635-cf06-4eec-9376-c55f52499bc8")`,
+        backgroundRepeat: "no-repeat",
+
+        backgroundPosition: "center",
+        //linear gradient
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),url("https://firebasestorage.googleapis.com/v0/b/peaceful-d5db9.appspot.com/o/M2.JPG?alt=media&token=c6dcf635-cf06-4eec-9376-c55f52499bc8")`,
+        backgroundSize: "cover",
+      }}
+    >
+      <div
+        className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8 sm:bg-transparent bg-white"
+        style={{}}
+      >
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <a href="javascript:void(0)">
-              <h2 className="text-sm sm:text-lg items-center font-bold flex text-primary">
-                <img src={img} className="w-16 h-14" alt="logo" />
+              <h2 className="text-sm sm:text-lg items-center font-bold flex text-white">
+                <img
+                  src={img}
+                  style={{
+                    opacity: "0.9",
+                  }}
+                  className="w-16 h-14"
+                  alt="logo"
+                />
                 <span className="ml-2">PEACEFUL DREAMENT ENTERPRISE</span>
               </h2>
             </a>
@@ -86,7 +107,7 @@ export default function NavBar() {
                 >
                   <Link
                     to={link.url}
-                    className="text-base font-medium text-priamry hover:text-blue-500"
+                    className="text-base font-medium text-primary sm:text-white hover:text-blue-500"
                   >
                     {link.text}
                   </Link>

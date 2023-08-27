@@ -12,7 +12,7 @@ import Stat from '../components/Stat';
 const Home = () => {
   return (
     <div>
-       <Hero />
+        {/* <Hero /> */}
             
        <Services />
         <Stat />
