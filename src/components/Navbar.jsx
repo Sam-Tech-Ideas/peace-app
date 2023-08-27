@@ -51,7 +51,7 @@ export default function NavBar() {
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <a href="javascript:void(0)">
-              <h2 className="text-sm sm:text-lg items-center font-bold flex text-white">
+              <h2 className="text-sm sm:text-lg items-center font-bold flex text-primary sm:text-white">
                 <img
                   src={img}
                   style={{
