@@ -1,122 +1,202 @@
-import { useState } from "react";
-import { useLocation, Link } from "react-router-dom";
-import img from "../assets/peace.png";
-import { FaTimes } from "react-icons/fa";
-import { AiOutlineClose } from "react-icons/ai";
 
-export default function NavBar() {
-  const [navbar, setNavbar] = useState(false);
-  const location = useLocation();
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+const Navbar = () => {
+  // Navbar toggle
+  const [navbarOpen, setNavbarOpen] = useState(false);
+  const navbarToggleHandler = () => {
+    setNavbarOpen(!navbarOpen);
+  };
 
-  const links = [
-    {
-      id: 1,
-      text: "Home",
-      url: "/",
-    },
-    {
-      id: 2,
-      text: "About",
-      url: "/about",
-    },
-    {
-      id: 3,
-      text: "Services",
-      url: "/services",
-    },
-    {
-      id: 4,
-      text: "Contact",
-      url: "/contact",
-    },
-  ];
+  // Sticky Navbar
+  const [sticky, setSticky] = useState(false);
+  const handleStickyNavbar = () => {
+    if (window.scrollY >= 80) {
+      setSticky(true);
+    } else {
+      setSticky(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleStickyNavbar);
+  });
+
+  // submenu handler
+  const [openIndex, setOpenIndex] = useState(-1);
+  const handleSubmenu = (index) => {
+    if (openIndex === index) {
+      setOpenIndex(-1);
+    } else {
+      setOpenIndex(index);
+    }
+  };
 
   return (
-    <nav
-      className="w-full  h-[90vh]  bg-cover bg-center bg-no-repeat"
-      style={{
-        //backgroundImage: `url("https://firebasestorage.googleapis.com/v0/b/peaceful-d5db9.appspot.com/o/M2.JPG?alt=media&token=c6dcf635-cf06-4eec-9376-c55f52499bc8")`,
-        backgroundRepeat: "no-repeat",
-
-        backgroundPosition: "center",
-        //linear gradient
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),url("https://firebasestorage.googleapis.com/v0/b/peaceful-d5db9.appspot.com/o/M2.JPG?alt=media&token=c6dcf635-cf06-4eec-9376-c55f52499bc8")`,
-        backgroundSize: "cover",
-      }}
-    >
-      <div
-        className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8 sm:bg-transparent bg-white"
-        style={{}}
+    <>
+      <header
+        className={`header top-0 left-0 z-40 bg-white text-primary flex w-full items-center bg-transparent justify-around px-8 ${
+          sticky
+            ? "!fixed !z-[9999]  !bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm !transition dark:!bg-primary dark:!bg-opacity-20"
+            : "absolute"
+        }`}
       >
-        <div>
-          <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <a href="javascript:void(0)">
-              <h2 className="text-sm sm:text-lg items-center font-bold flex text-primary sm:text-white">
-                <img
-                  src={img}
-                  style={{
-                    opacity: "0.9",
-                  }}
-                  className="w-16 h-14"
-                  alt="logo"
-                />
-                <span className="ml-2">PEACEFUL DREAMENT ENTERPRISE</span>
-              </h2>
-            </a>
-            <div className="md:hidden">
-              <button
-                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 "
-                onClick={() => setNavbar(!navbar)}
+        <div className="container">
+          <div className="relative -mx-4 flex items-center justify-between">
+            <div className="w-60 max-w-full px-4 xl:mr-12">
+              <Link
+                to="/"
+                className={`header-logo block w-full ${
+                  sticky ? "py-5 lg:py-2" : "py-8"
+                } `}
               >
-                {navbar ? (
-                  <AiOutlineClose size={24} />
-                ) : (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M4 6h16M4 12h16M4 18h16"
-                    />
-                  </svg>
-                )}
-              </button>
+              <img src="https://firebasestorage.googleapis.com/v0/b/peaceful-d5db9.appspot.com/o/logo.png?alt=media&token=3b5b5b1a-9b0a-4b0a-8b0a-3b0a0b0a0b0a" alt="logo" className="w-full dark:hidden" />
+                {/* <Image
+                  src="/images/logo/logo.svg"
+                  alt="logo"
+                  width={140}
+                  height={30}
+                  className="w-full dark:hidden"
+                /> */}
+                {/* <Image
+                  src="/images/logo/logo.svg"
+                  alt="logo"
+                  width={140}
+                  height={30}
+                  className="hidden w-full dark:block"
+                /> */}
+              </Link>
+            </div>
+            <div className="flex w-full items-center justify-between px-4">
+              <div>
+                <button
+                  onClick={navbarToggleHandler}
+                  id="navbarToggler"
+                  aria-label="Mobile Menu"
+                  className="absolute right-4 top-1/2 block translate-y-[-50%] rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
+                >
+                  <span
+                    className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
+                      navbarOpen ? " top-[7px] rotate-45" : " "
+                    }`}
+                  />
+                  <span
+                    className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
+                      navbarOpen ? "opacity-0 " : " "
+                    }`}
+                  />
+                  <span
+                    className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
+                      navbarOpen ? " top-[-8px] -rotate-45" : " "
+                    }`}
+                  />
+                </button>
+                <nav
+                  id="navbarCollapse"
+                  className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-white py-4 px-6 duration-300 dark:border-body-color/20 dark:bg-dark lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
+                    navbarOpen
+                      ? "visibility top-full opacity-100"
+                      : "invisible top-[120%] opacity-0"
+                  }`}
+                >
+                   <ul className="block lg:flex lg:space-x-12 ">
+                    <li key="1" className="group relative">
+                      <Link
+                        to="/"
+                        className={`flex py-2 text-base text-dark group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
+                      >
+                        Home
+                      </Link>
+                    </li>
+                    <li key="2" className="group relative">
+                      <Link
+                        href="/"
+                        className={`flex py-2 text-base text-dark group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
+                      >
+                        About
+                      </Link>
+                    </li>
+                    <li key="2" className="group relative">
+                      <Link
+                        href="/"
+                        className={`flex py-2 text-base text-dark group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
+                      >
+                        Services
+                      </Link>
+                    </li>
+
+                    <li key="2" className="group relative">
+                      <Link
+                        href="/"
+                        className={`flex py-2 text-base text-dark group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
+                      >
+                        Projects
+                      </Link>
+                    </li>
+                  </ul>
+                  {/* <ul className="block lg:flex lg:space-x-12">
+                    {menuData.map((menuItem, index) => (
+                      <li key={menuItem.id} className="group relative">
+                        {menuItem.path ? (
+                          <Link
+                            href={menuItem.path}
+                            className={`flex py-2 text-base text-dark group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
+                          >
+                            {menuItem.title}
+                          </Link>
+                        ) : (
+                          <>
+                            <a
+                              onClick={() => handleSubmenu(index)}
+                              className="flex cursor-pointer items-center justify-between py-2 text-base text-dark group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0"
+                            >
+                              {menuItem.title}
+                              <span className="pl-3">
+                                <svg width="15" height="14" viewBox="0 0 15 14">
+                                  <path
+                                    d="M7.81602 9.97495C7.68477 9.97495 7.57539 9.9312 7.46602 9.8437L2.43477 4.89995C2.23789 4.70308 2.23789 4.39683 2.43477 4.19995C2.63164 4.00308 2.93789 4.00308 3.13477 4.19995L7.81602 8.77183L12.4973 4.1562C12.6941 3.95933 13.0004 3.95933 13.1973 4.1562C13.3941 4.35308 13.3941 4.65933 13.1973 4.8562L8.16601 9.79995C8.05664 9.90933 7.94727 9.97495 7.81602 9.97495Z"
+                                    fill="currentColor"
+                                  />
+                                </svg>
+                              </span>
+                            </a>
+                            <div
+                              className={`submenu relative top-full left-0 rounded-md bg-white transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[250px] lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${
+                                openIndex === index ? "block" : "hidden"
+                              }`}
+                            >
+                              {menuItem.submenu.map((submenuItem) => (
+                                <Link
+                                  href={submenuItem.path}
+                                  key={submenuItem.id}
+                                  className="block rounded py-2.5 text-sm text-dark hover:opacity-70 dark:text-white lg:px-3"
+                                >
+                                  {submenuItem.title}
+                                </Link>
+                              ))}
+                            </div>
+                          </>
+                        )}
+                      </li>
+                    ))}
+                  </ul> */}
+                </nav>
+              </div>
+              <div className="flex items-center justify-end pr-16 lg:pr-0">
+                <Link
+                  href="/signin"
+                  className="hidden py-3 px-7 text-base font-bold text-dark hover:opacity-70 dark:text-white md:block bg-blue-500 rounded text-white"
+                >
+                  Contact Us
+                </Link>
+
+                <div></div>
+              </div>
             </div>
           </div>
         </div>
-        <div>
-          <div
-            className={`flex-1 justify-self-center pb-3 mt-8 md:block duration-750 md:pb-0 md:mt-0 ${
-              navbar ? "block" : "hidden"
-            }`}
-          >
-            <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              {links.map((link) => (
-                <li
-                  key={link.id}
-                  onClick={() => setNavbar(!navbar)}
-                  className={`${
-                    location.pathname === link.url ? "active-link " : ""
-                  }`}
-                >
-                  <Link
-                    to={link.url}
-                    className="text-base font-medium text-primary sm:text-white hover:text-blue-500"
-                  >
-                    {link.text}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
+      </header>
+    </>
   );
-}
+};
+
+export default Navbar;

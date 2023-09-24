@@ -99,7 +99,7 @@ const sendEmail = (e) => {
   return (
     <div>
       <section class="text-primary body-font relative">
-        <div class="container px-5 pb-12 pt-12 mx-auto flex sm:flex-nowrap flex-wrap">
+        <div class="container px-5 pb-12 pt-12 mx-auto flex sm:flex-nowrap flex-wrap sm:my-24 sm:16">
           <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8  md:mt-0">
             <div class=" mb-10">
               <div class=" py-3">

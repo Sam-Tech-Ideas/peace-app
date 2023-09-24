@@ -5,7 +5,7 @@ const Team = () => {
   return (
     <div>
       <section class="text-primary body-font">
-        <div class="container px-5 py-24 mx-auto">
+        <div class="container px-5 py-24 mx-auto sm:my-24">
           <div class="text-center mb-10">
             <div class="flex mt-6 justify-center py-3">
               <div class="w-16 h-1 rounded-full bg-primary inline-flex"></div>

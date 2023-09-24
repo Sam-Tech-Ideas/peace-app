@@ -148,7 +148,169 @@ import {
 const Services = () => {
   return (
     <div>
-      <section class="text-primary body-font">
+      <div className="px-4 py-24 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 sm:my-24">
+        <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+          <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+            {/*  <span className="relative inline-block">
+           <svg
+                viewBox="0 0 52 24"
+                fill="currentColor"
+                className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
+              >
+                <defs>
+                  <pattern
+                    id="18302e52-9e2a-4c8e-9550-0cbb21b38e55"
+                    x="0"
+                    y="0"
+                    width=".135"
+                    height=".30"
+                  >
+                    <circle cx="1" cy="1" r=".7" />
+                  </pattern>
+                </defs>
+                <rect
+                  fill="url(#18302e52-9e2a-4c8e-9550-0cbb21b38e55)"
+                  width="52"
+                  height="24"
+                />
+              </svg>
+            </span>{" "} */}
+            Why Choose Us?
+          </h2>
+          <p className="text-base text-gray-700 md:text-lg">
+            We provide the best services to our customers and we are always ready to serve you with the best.
+          </p>
+        </div>
+        <div className="grid gap-4 row-gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="flex flex-col justify-between p-5 border rounded shadow-sm">
+            <div>
+              <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50">
+                <svg
+                  className="w-12 h-12 text-deep-purple-accent-400"
+                  stroke="currentColor"
+                  viewBox="0 0 52 52"
+                >
+                  <polygon
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    fill="none"
+                    points="29 13 14 29 25 29 23 39 38 23 27 23"
+                  />
+                </svg>
+              </div>
+              <h6 className="mb-2 font-semibold leading-5">The deep ocean</h6>
+              <p className="mb-3 text-sm text-gray-900">
+                A flower in my garden, a mystery in my panties. Heart attack
+                never stopped old Big Bear.
+              </p>
+            </div>
+            <a
+              href="/"
+              aria-label=""
+              className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+            >
+              Learn more
+            </a>
+          </div>
+          <div className="flex flex-col justify-between p-5 border rounded shadow-sm">
+            <div>
+              <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50">
+                <svg
+                  className="w-12 h-12 text-deep-purple-accent-400"
+                  stroke="currentColor"
+                  viewBox="0 0 52 52"
+                >
+                  <polygon
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    fill="none"
+                    points="29 13 14 29 25 29 23 39 38 23 27 23"
+                  />
+                </svg>
+              </div>
+              <h6 className="mb-2 font-semibold leading-5">When has justice</h6>
+              <p className="mb-3 text-sm text-gray-900">
+                Rough pomfret lemon shark plownose chimaera southern sandfish
+                kokanee northern sea.
+              </p>
+            </div>
+            <a
+              href="/"
+              aria-label=""
+              className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+            >
+              Learn more
+            </a>
+          </div>
+          <div className="flex flex-col justify-between p-5 border rounded shadow-sm">
+            <div>
+              <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50">
+                <svg
+                  className="w-12 h-12 text-deep-purple-accent-400"
+                  stroke="currentColor"
+                  viewBox="0 0 52 52"
+                >
+                  <polygon
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    fill="none"
+                    points="29 13 14 29 25 29 23 39 38 23 27 23"
+                  />
+                </svg>
+              </div>
+              <h6 className="mb-2 font-semibold leading-5">Organically grow</h6>
+              <p className="mb-3 text-sm text-gray-900">
+                A slice of heaven. O for awesome, this chocka full cuzzie is as
+                rip-off as a cracker.
+              </p>
+            </div>
+            <a
+              href="/"
+              aria-label=""
+              className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+            >
+              Learn more
+            </a>
+          </div>
+          <div className="flex flex-col justify-between p-5 border rounded shadow-sm">
+            <div>
+              <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50">
+                <svg
+                  className="w-12 h-12 text-deep-purple-accent-400"
+                  stroke="currentColor"
+                  viewBox="0 0 52 52"
+                >
+                  <polygon
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    fill="none"
+                    points="29 13 14 29 25 29 23 39 38 23 27 23"
+                  />
+                </svg>
+              </div>
+              <h6 className="mb-2 font-semibold leading-5">
+                A slice of heaven
+              </h6>
+              <p className="mb-3 text-sm text-gray-900">
+                Disrupt inspire and think tank, social entrepreneur but
+                preliminary thinking think tank compelling.
+              </p>
+            </div>
+            <a
+              href="/"
+              aria-label=""
+              className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+            >
+              Learn more
+            </a>
+          </div>
+        </div>
+      </div>
+      {/* <section class="text-primary body-font">
         <div class="container px-5 py-24 mx-auto">
           <div class="text-center mb-10">
             <div class="flex mt-6 justify-center py-3">
@@ -254,108 +416,108 @@ https://firebasestorage.googleapis.com/v0/b/peaceful-d5db9.appspot.com/o/M3.JPG?
                 </p>
               </div>
             </div>
-          </div> */}
+          </div> 
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
 
 export default Services;
 
-<section class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-wrap w-full mb-20">
-      <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
-          Pitchfork Kickstarter Taxidermy
-        </h1>
-        <div class="h-1 w-20 bg-indigo-500 rounded"></div>
-      </div>
-      <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">
-        Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-        gentrify, subway tile poke farm-to-table. Franzen you probably haven't
-        heard of them man bun deep jianbing selfies heirloom prism food truck
-        ugh squid celiac humblebrag.
-      </p>
-    </div>
-    <div class="flex flex-wrap -m-4">
-      <div class="xl:w-1/3 md:w-1/2 p-4">
-        <div class="bg-gray-100 p-6 rounded-lg">
-          <img
-            class="h-40 rounded w-full object-cover object-center mb-6"
-            src="https://dummyimage.com/720x400"
-            alt="content"
-          />
-          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
-            SUBTITLE
-          </h3>
-          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
-            Chichen Itza
-          </h2>
-          <p class="leading-relaxed text-base">
-            Fingerstache flexitarian street art 8-bit waistcoat. Distillery
-            hexagon disrupt edison bulbche.
-          </p>
-        </div>
-      </div>
-      <div class="xl:w-1/3 md:w-1/2 p-4">
-        <div class="bg-gray-100 p-6 rounded-lg">
-          <img
-            class="h-40 rounded w-full object-cover object-center mb-6"
-            src="https://dummyimage.com/721x401"
-            alt="content"
-          />
-          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
-            SUBTITLE
-          </h3>
-          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
-            Colosseum Roma
-          </h2>
-          <p class="leading-relaxed text-base">
-            Fingerstache flexitarian street art 8-bit waistcoat. Distillery
-            hexagon disrupt edison bulbche.
-          </p>
-        </div>
-      </div>
-      <div class="xl:w-1/3 md:w-1/2 p-4">
-        <div class="bg-gray-100 p-6 rounded-lg">
-          <img
-            class="h-40 rounded w-full object-cover object-center mb-6"
-            src="https://dummyimage.com/722x402"
-            alt="content"
-          />
-          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
-            SUBTITLE
-          </h3>
-          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
-            Great Pyramid of Giza
-          </h2>
-          <p class="leading-relaxed text-base">
-            Fingerstache flexitarian street art 8-bit waistcoat. Distillery
-            hexagon disrupt edison bulbche.
-          </p>
-        </div>
-      </div>
-      <div class="xl:w-1/3 md:w-1/2 p-4">
-        <div class="bg-gray-100 p-6 rounded-lg">
-          <img
-            class="h-40 rounded w-full object-cover object-center mb-6"
-            src="https://dummyimage.com/723x403"
-            alt="content"
-          />
-          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
-            SUBTITLE
-          </h3>
-          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
-            San Francisco
-          </h2>
-          <p class="leading-relaxed text-base">
-            Fingerstache flexitarian street art 8-bit waistcoat. Distillery
-            hexagon disrupt edison bulbche.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>;
+// <section class="text-gray-600 body-font">
+//   <div class="container px-5 py-24 mx-auto">
+//     <div class="flex flex-wrap w-full mb-20">
+//       <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+//         <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+//           Pitchfork Kickstarter Taxidermy
+//         </h1>
+//         <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+//       </div>
+//       <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">
+//         Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
+//         gentrify, subway tile poke farm-to-table. Franzen you probably haven't
+//         heard of them man bun deep jianbing selfies heirloom prism food truck
+//         ugh squid celiac humblebrag.
+//       </p>
+//     </div>
+//     <div class="flex flex-wrap -m-4">
+//       <div class="xl:w-1/3 md:w-1/2 p-4">
+//         <div class="bg-gray-100 p-6 rounded-lg">
+//           <img
+//             class="h-40 rounded w-full object-cover object-center mb-6"
+//             src="https://dummyimage.com/720x400"
+//             alt="content"
+//           />
+//           <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
+//             SUBTITLE
+//           </h3>
+//           <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+//             Chichen Itza
+//           </h2>
+//           <p class="leading-relaxed text-base">
+//             Fingerstache flexitarian street art 8-bit waistcoat. Distillery
+//             hexagon disrupt edison bulbche.
+//           </p>
+//         </div>
+//       </div>
+//       <div class="xl:w-1/3 md:w-1/2 p-4">
+//         <div class="bg-gray-100 p-6 rounded-lg">
+//           <img
+//             class="h-40 rounded w-full object-cover object-center mb-6"
+//             src="https://dummyimage.com/721x401"
+//             alt="content"
+//           />
+//           <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
+//             SUBTITLE
+//           </h3>
+//           <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+//             Colosseum Roma
+//           </h2>
+//           <p class="leading-relaxed text-base">
+//             Fingerstache flexitarian street art 8-bit waistcoat. Distillery
+//             hexagon disrupt edison bulbche.
+//           </p>
+//         </div>
+//       </div>
+//       <div class="xl:w-1/3 md:w-1/2 p-4">
+//         <div class="bg-gray-100 p-6 rounded-lg">
+//           <img
+//             class="h-40 rounded w-full object-cover object-center mb-6"
+//             src="https://dummyimage.com/722x402"
+//             alt="content"
+//           />
+//           <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
+//             SUBTITLE
+//           </h3>
+//           <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+//             Great Pyramid of Giza
+//           </h2>
+//           <p class="leading-relaxed text-base">
+//             Fingerstache flexitarian street art 8-bit waistcoat. Distillery
+//             hexagon disrupt edison bulbche.
+//           </p>
+//         </div>
+//       </div>
+//       <div class="xl:w-1/3 md:w-1/2 p-4">
+//         <div class="bg-gray-100 p-6 rounded-lg">
+//           <img
+//             class="h-40 rounded w-full object-cover object-center mb-6"
+//             src="https://dummyimage.com/723x403"
+//             alt="content"
+//           />
+//           <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
+//             SUBTITLE
+//           </h3>
+//           <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+//             San Francisco
+//           </h2>
+//           <p class="leading-relaxed text-base">
+//             Fingerstache flexitarian street art 8-bit waistcoat. Distillery
+//             hexagon disrupt edison bulbche.
+//           </p>
+//         </div>
+//       </div>
+//     </div>
+//   </div>
+// </section>;

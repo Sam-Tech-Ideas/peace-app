@@ -13,6 +13,7 @@ import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Success from "./components/Success";
 import ContactPage from "./pages/ContactPage";
+import OrderPage from "./pages/OrderPage";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/success" element={<Success />} />
+            <Route path="/order" element={<OrderPage />} />
             
           </Routes>
         </Layout>

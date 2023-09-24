@@ -43,12 +43,14 @@ function Hero() {
               to return.
             </p>
 
-            <div className="flex justify-center">
-              <button className="bg-blue-500 hover:shadow-lg hover:bg-blue-600 text-white font-bold  px-4 py-1 sm:py-3 sm:px-8 rounded-md mx-4">
+            <div className="sm:flex justify-center   ">
+              
+
+              <button className="bg-blue-500 hover:shadow-lg hover:bg-blue-600 text-white font-bold   px-4 py-4 sm:py-3 sm:px-8 rounded-md mx-2 w-full sm:w-40 my-6">
                 Order Here
               </button>
 
-              <button className="bg-transparent text-sm hover:shadow-sm hover:duration-700 hover:bg-opacity-30 hover:bg-[rgb(254,249,249)] hover:border-white text-white font-semibold hover:text-white sm:py-3 px-4 py-1 sm:px-8  border border-white hover:border-transparent rounded-md mx-2">
+              <button className="bg-transparent my-6 text-sm hover:shadow-sm hover:duration-700 hover:bg-opacity-30 hover:bg-[rgb(254,249,249)] hover:border-white text-white font-semibold hover:text-white sm:py-3 px-4  py-4 sm:px-8  border border-white hover:border-transparent rounded-md mx-2 w-full sm:w-40">
                 Learn More
               </button>
             </div>
