@@ -204,9 +204,8 @@ const About = () => {
                 sheets, polythene and a lot more.
               </p>
               <div class="flex w-full md:justify-start justify-center items-end"></div>
-              <p class="text-sm mt-2 text-gray-500 mb-8 w-full">
-                Neutra shabby chic ramps, viral fixie.
-              </p>
+              {/* <p class="text-sm mt-2 text-gray-500 mb-8 w-full">
+              </p> */}
             </div>
           </div>
         </section>

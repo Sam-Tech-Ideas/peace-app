@@ -1,6 +1,7 @@
 
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/peace.png";
 const Navbar = () => {
   // Navbar toggle
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -45,11 +46,17 @@ const Navbar = () => {
             <div className="w-60 max-w-full px-4 xl:mr-12">
               <Link
                 to="/"
-                className={`header-logo block w-full ${
+                className={`header-logo block w-full  ${
                   sticky ? "py-5 lg:py-2" : "py-8"
                 } `}
               >
-              <img src="https://firebasestorage.googleapis.com/v0/b/peaceful-d5db9.appspot.com/o/logo.png?alt=media&token=3b5b5b1a-9b0a-4b0a-8b0a-3b0a0b0a0b0a" alt="logo" className="w-full dark:hidden" />
+                <div className="flex items-center">
+                  <img src={logo} alt="logo" className="h-20  dark:hidden" />
+                  <div className="flex gap-1 sm:hidden">
+                    <h2 className="text-sm uppercase font-bold">Peaceful </h2>
+                    <h2 className="text-sm uppercase font-bold"> Dreament</h2>
+                  </div>
+                </div>
                 {/* <Image
                   src="/images/logo/logo.svg"
                   alt="logo"
@@ -98,7 +105,7 @@ const Navbar = () => {
                       : "invisible top-[120%] opacity-0"
                   }`}
                 >
-                   <ul className="block lg:flex lg:space-x-12 ">
+                  <ul className="block lg:flex lg:space-x-12 ">
                     <li key="1" className="group relative">
                       <Link
                         to="/"
@@ -109,7 +116,7 @@ const Navbar = () => {
                     </li>
                     <li key="2" className="group relative">
                       <Link
-                        href="/"
+                        to="/About"
                         className={`flex py-2 text-base text-dark group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
                       >
                         About
@@ -117,21 +124,21 @@ const Navbar = () => {
                     </li>
                     <li key="2" className="group relative">
                       <Link
-                        href="/"
+                        to="/Services"
                         className={`flex py-2 text-base text-dark group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
                       >
                         Services
                       </Link>
                     </li>
 
-                    <li key="2" className="group relative">
+                    {/* <li key="2" className="group relative">
                       <Link
                         href="/"
                         className={`flex py-2 text-base text-dark group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
                       >
                         Projects
                       </Link>
-                    </li>
+                    </li> */}
                   </ul>
                   {/* <ul className="block lg:flex lg:space-x-12">
                     {menuData.map((menuItem, index) => (
@@ -183,7 +190,7 @@ const Navbar = () => {
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
                 <Link
-                  href="/signin"
+                  to="/Contact"
                   className="hidden py-3 px-7 text-base font-bold text-dark hover:opacity-70 dark:text-white md:block bg-blue-500 rounded text-white"
                 >
                   Contact Us

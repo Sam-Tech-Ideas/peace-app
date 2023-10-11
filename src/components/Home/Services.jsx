@@ -178,7 +178,8 @@ const Services = () => {
             Why Choose Us?
           </h2>
           <p className="text-base text-gray-700 md:text-lg">
-            We provide the best services to our customers and we are always ready to serve you with the best.
+            We provide the best services to our customers and we are always
+            ready to serve you with the best.
           </p>
         </div>
         <div className="grid gap-4 row-gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -199,19 +200,11 @@ const Services = () => {
                   />
                 </svg>
               </div>
-              <h6 className="mb-2 font-semibold leading-5">The deep ocean</h6>
+              <h6 className="mb-2 font-semibold leading-5">Quality</h6>
               <p className="mb-3 text-sm text-gray-900">
-                A flower in my garden, a mystery in my panties. Heart attack
-                never stopped old Big Bear.
+                Quality is our priority and we provide the best services to our
               </p>
             </div>
-            <a
-              href="/"
-              aria-label=""
-              className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-            >
-              Learn more
-            </a>
           </div>
           <div className="flex flex-col justify-between p-5 border rounded shadow-sm">
             <div>
@@ -230,19 +223,12 @@ const Services = () => {
                   />
                 </svg>
               </div>
-              <h6 className="mb-2 font-semibold leading-5">When has justice</h6>
+              <h6 className="mb-2 font-semibold leading-5">Durable</h6>
               <p className="mb-3 text-sm text-gray-900">
-                Rough pomfret lemon shark plownose chimaera southern sandfish
-                kokanee northern sea.
+                We provide durable services to our customers. 
+
               </p>
             </div>
-            <a
-              href="/"
-              aria-label=""
-              className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-            >
-              Learn more
-            </a>
           </div>
           <div className="flex flex-col justify-between p-5 border rounded shadow-sm">
             <div>
@@ -261,19 +247,11 @@ const Services = () => {
                   />
                 </svg>
               </div>
-              <h6 className="mb-2 font-semibold leading-5">Organically grow</h6>
+              <h6 className="mb-2 font-semibold leading-5">Reliable</h6>
               <p className="mb-3 text-sm text-gray-900">
-                A slice of heaven. O for awesome, this chocka full cuzzie is as
-                rip-off as a cracker.
+                We are always available to serve you with the best services.
               </p>
             </div>
-            <a
-              href="/"
-              aria-label=""
-              className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-            >
-              Learn more
-            </a>
           </div>
           <div className="flex flex-col justify-between p-5 border rounded shadow-sm">
             <div>
@@ -293,20 +271,12 @@ const Services = () => {
                 </svg>
               </div>
               <h6 className="mb-2 font-semibold leading-5">
-                A slice of heaven
+                Affordable Prices
               </h6>
               <p className="mb-3 text-sm text-gray-900">
-                Disrupt inspire and think tank, social entrepreneur but
-                preliminary thinking think tank compelling.
+                Our prices are affordable and we provide the best services.
               </p>
             </div>
-            <a
-              href="/"
-              aria-label=""
-              className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-            >
-              Learn more
-            </a>
           </div>
         </div>
       </div>
