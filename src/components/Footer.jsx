@@ -3,7 +3,7 @@ import { FaEnvelope, FaFacebook, FaFacebookF, FaInstagram, FaLinkedin } from 're
 import Iframe from "react-iframe";
 const Footer = () => {
   return (
-    <div className='flex-col justify-center items-center'>
+    <div className="flex-col justify-center items-center">
       <footer class="text-gray-300 body-font bg-gray-800 flex justify-center items-center">
         <div class="container px-5 py-12 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
           <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
@@ -14,13 +14,13 @@ const Footer = () => {
               <nav class="list-none mb-10">
                 <li className="py-2">
                   <a class="text-gray-300">Phone: </a>
-                  <a class="text-gray-300 ">233559911251</a>
+                  <a class="text-gray-300 ">(+233) 244 648 028</a>
                 </li>
                 <li className="py-2">
-                  <a class="text-gray-300  hover:cursor-pointer">
-                    Location:{" "}
+                  <a class="text-gray-300  hover:cursor-pointer">Location: </a>
+                  <a class="text-gray-300">
+                    Juaben Rural Bank, Roman Hill, Kumasi, Ghana
                   </a>
-                  <a class="text-gray-300">Accra, Ghana</a>
                 </li>
               </nav>
             </div>
@@ -67,13 +67,10 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-        
-      <div className='bg-gray-800 text-gray-300 text-center py-8 px-6'>
-        <p >
-        
-        Copyright 
-        &#169;2023 PeacefulDreament. Developed by Zap Technologies
-        
+
+      <div className="bg-gray-800 text-gray-300 text-center py-8 px-6">
+        <p>
+          Copyright &#169;2023 PeacefulDreament. Developed by Zap Technologies
         </p>
       </div>
     </div>

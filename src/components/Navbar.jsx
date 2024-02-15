@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/peace.png";
@@ -37,7 +36,7 @@ const Navbar = () => {
       <header
         className={`header top-0 left-0 z-40 bg-white text-primary flex w-full items-center bg-transparent justify-around px-8 ${
           sticky
-            ? "!fixed !z-[9999]  !bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm !transition dark:!bg-primary dark:!bg-opacity-20"
+            ? "!fixed !z-[9999]  !bg-opacity-80 shadow-sticky  !transition bg-primary "
             : "absolute"
         }`}
       >
@@ -47,14 +46,19 @@ const Navbar = () => {
               <Link
                 to="/"
                 className={`header-logo block w-full  ${
-                  sticky ? "py-5 lg:py-2" : "py-8"
+                  sticky ? "py-5 lg:py-2" : "py-5"
                 } `}
               >
                 <div className="flex items-center">
-                  <img src={logo} alt="logo" className="h-20  dark:hidden" />
+                  <img
+                    src={logo}
+                    alt="logo"
+                    className="h-10  hidden sm:block"
+                  />
                   <div className="flex gap-1 sm:hidden">
-                    <h2 className="text-sm uppercase font-bold">Peaceful </h2>
-                    <h2 className="text-sm uppercase font-bold"> Dreament</h2>
+                    <h2 className="text-xs uppercase font-bold">Peaceful </h2>
+                    <h2 className="text-xs uppercase font-bold"> Dream</h2>
+                    <h2 className="text-xs uppercase font-bold"> Enterprise</h2>
                   </div>
                 </div>
                 {/* <Image
@@ -82,24 +86,24 @@ const Navbar = () => {
                   className="absolute right-4 top-1/2 block translate-y-[-50%] rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
                 >
                   <span
-                    className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
+                    className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300  ${
                       navbarOpen ? " top-[7px] rotate-45" : " "
                     }`}
                   />
                   <span
-                    className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
+                    className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300  ${
                       navbarOpen ? "opacity-0 " : " "
                     }`}
                   />
                   <span
-                    className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
+                    className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300  ${
                       navbarOpen ? " top-[-8px] -rotate-45" : " "
                     }`}
                   />
                 </button>
                 <nav
                   id="navbarCollapse"
-                  className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-white py-4 px-6 duration-300 dark:border-body-color/20 dark:bg-dark lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
+                  className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-white py-4 px-6 duration-300 dark:border-body-color/20  lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
                     navbarOpen
                       ? "visibility top-full opacity-100"
                       : "invisible top-[120%] opacity-0"
@@ -109,7 +113,7 @@ const Navbar = () => {
                     <li key="1" className="group relative">
                       <Link
                         to="/"
-                        className={`flex py-2 text-base text-dark group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
+                        className={`flex py-2 text-base text-primary group-hover:opacity-70  lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
                       >
                         Home
                       </Link>
@@ -117,7 +121,7 @@ const Navbar = () => {
                     <li key="2" className="group relative">
                       <Link
                         to="/About"
-                        className={`flex py-2 text-base text-dark group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
+                        className={`flex py-2 text-base text-primary group-hover:opacity-70 lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
                       >
                         About
                       </Link>
@@ -125,7 +129,7 @@ const Navbar = () => {
                     <li key="2" className="group relative">
                       <Link
                         to="/Services"
-                        className={`flex py-2 text-base text-dark group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
+                        className={`flex py-2 text-base text-primary group-hover:opacity-70  lg:mr-0 lg:inline-flex lg:py-6 lg:px-0`}
                       >
                         Services
                       </Link>
@@ -191,7 +195,7 @@ const Navbar = () => {
               <div className="flex items-center justify-end pr-16 lg:pr-0">
                 <Link
                   to="/Contact"
-                  className="hidden py-3 px-7 text-base font-bold text-dark hover:opacity-70 dark:text-white md:block bg-blue-500 rounded text-white"
+                  className="hidden py-3 px-7 text-base font-bold text-white hover:opacity-70  md:block bg-blue-500 rounded "
                 >
                   Contact Us
                 </Link>

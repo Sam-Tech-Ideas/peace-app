@@ -35,8 +35,8 @@ function Hero() {
       <div class="container mx-auto flex px-5  items-center justify-center flex-col">
         <div className="flex justify-center items-center h-screen">
           <div className="text-center  w-full">
-            <h1 className="sm:text-5xl text-3xl font-bold leading-tight ">
-              EXPERIENCE THE SERVICES OF AN ENTERPRISE <br /> WITH PEACEFUL
+            <h1 className="sm:text-3xl text-2xl font-bold leading-tight ">
+              EXPERIENCE THE SERVICE OF AN ENTERPRISE <br /> WITH PEACEFUL
               DREAM.
             </h1>
             <p className="sm:text-xl py-4 text-md ">

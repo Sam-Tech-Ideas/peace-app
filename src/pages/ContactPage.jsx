@@ -40,8 +40,7 @@ const ContactPage = () => {
                       Our Location
                     </h4>
                     <p class="text-body-color text-base">
-                      Central Market , Kumasi , Ghana
-                    </p>
+Juaben Rural Bank, Roman Hill, Kumasi, Ghana                    </p>
                   </div>
                 </div>
                 <div class="mb-8 flex w-full max-w-[370px]">
@@ -62,7 +61,7 @@ const ContactPage = () => {
                       Phone Number
                     </h4>
                     <p class="text-body-color text-base">
-                      (+233) 55 9911 251
+                      (+233) 244 648 028
                     </p>
                   </div>
                 </div>
@@ -81,7 +80,9 @@ const ContactPage = () => {
                     <h4 class="text-dark mb-1 text-xl font-bold">
                       Email Address
                     </h4>
-                    <p class="text-body-color text-base">info@peacefuldreament.com</p>
+                    <p class="text-body-color text-base">
+                      peacefuldreamenterprise@gmail.com
+                    </p>
                   </div>
                 </div>
               </div>
