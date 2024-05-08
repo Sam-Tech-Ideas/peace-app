@@ -90,10 +90,7 @@
 
 // // export default About;
 
-
 // import React from 'react'
-
-
 
 // const About = () => {
 //   return (
@@ -216,113 +213,99 @@
 
 // export default About
 
-export const About = () => {
+export default () => {
+  const features = [
+    {
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+          stroke="currentColor"
+          className="w-6 h-6"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"
+          />
+        </svg>
+      ),
+      title: "An expert in polythene bags manufacturing",
+      desc: "   As the leading polythene bags manufacturer in Ghana, we have been in the business for over 20 years. We have a wide range of products that are suitable for all your packaging needs.",
+    },
+    // {
+    //     icon:
+    //         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+    //             <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+    //         </svg>,
+    //     title: "Datacenter security",
+    //     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius, enim ex faucibus purus."
+    // }
+  ];
+
   return (
-    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-24">
-      <div className="grid gap-10 lg:grid-cols-2">
-        <div className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
-          <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-accent-400">
-            {/* <svg className="text-teal-900 w-7 h-7" viewBox="0 0 24 24">
-              <polyline
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeMiterlimit="10"
-                points=" 8,5 8,1 16,1 16,5"
-                strokeLinejoin="round"
-              />
-              <polyline
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeMiterlimit="10"
-                points="9,15 1,15 1,5 23,5 23,15 15,15"
-                strokeLinejoin="round"
-              />
-              <polyline
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeMiterlimit="10"
-                points="22,18 22,23 2,23 2,18"
-                strokeLinejoin="round"
-              />
-              <rect
-                x="9"
-                y="13"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeMiterlimit="10"
-                width="6"
-                height="4"
-                strokeLinejoin="round"
-              />
-            </svg> */}
-          </div>
-          <div className="max-w-xl mb-6">
-            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-              Our Story
-              <br className="hidden md:block" />
-            </h2>
-            <p className="text-base text-gray-700 md:text-lg">
-              As the leading polythene bags manufacturer in Ghana, we have been
-              in the business for over 20 years. We have a wide range of
-              products that are suitable for all your packaging needs. Our
-              products include: polythene bags, polythene sheets, polythene
+    <section className="py-16 my-8">
+      <div className="max-w-screen-xl mx-auto px-4 text-gray-600 gap-16 justify-between md:px-8 lg:flex">
+        <div>
+          <div className="max-w-xl space-y-3 py-8">
+            <p className="text-gray-800 text-3xl font-semibold sm:text-4xl">
+              What we offer
+            </p>
+            <p>
+              Our products include: polythene bags, polythene sheets, polythene
               rolls, polythene tubing, polythene shrink film, polythene stretch
               film, polythene shrink hood, polythene shrink tubing, polythene
-              shrink bags, polythene shrink sheets, polythene shrink covers,
-              polythene shrink pallet covers, polythene shrink pallet hoods,
-              polythene shrink pallet bags, polythene shrink pallet sheets,
-              polythene and a lot more.
+              shrink bags, polythene shrink sheets, polythene shrink covers.
             </p>
           </div>
-          {/* <div>
-            <a
-              href="/"
-              aria-label=""
-              className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-            >
-              Learn more
-              <svg
-                className="inline-block w-3 ml-2"
-                fill="currentColor"
-                viewBox="0 0 12 12"
-              >
-                <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
-              </svg>
-            </a>
-          </div> */}
+          <div className="mt-12 max-w-lg lg:max-w-none">
+            <ul className="space-y-8">
+              {features.map((item, idx) => (
+                <li key={idx} className="flex gap-x-4">
+                  <div className="flex-none w-12 h-12 bg-indigo-50 text-primary rounded-lg flex items-center justify-center">
+                    {item.icon}
+                  </div>
+                  <div>
+                    <h4 className="text-lg text-gray-800 font-semibold">
+                      {item.title}
+                    </h4>
+                    <p className="mt-3">{item.desc}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-        <div className="flex items-center justify-center -mx-4 lg:pl-8">
-          <div className="flex flex-col items-end px-3">
-            <img
-              className="object-cover mb-6 rounded shadow-lg h-28 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56"
-              src="https://firebasestorage.googleapis.com/v0/b/peaceful-d5db9.appspot.com/o/M4.JPG?alt=media&token=68ccaa1a-f150-4737-9752-16e11748504c"
-              alt=""
-            />
-            <img
-              className="object-cover w-20 h-20 rounded shadow-lg sm:h-32 xl:h-40 sm:w-32 xl:w-40"
-              src="https://firebasestorage.googleapis.com/v0/b/peaceful-d5db9.appspot.com/o/M3.JPG?alt=media&token=a24e0957-7325-4633-91ce-df7610868476"
-              alt=""
-            />
-          </div>
-          <div className="px-3">
-            <img
-              className="object-cover w-40 h-40 rounded shadow-lg sm:h-64 xl:h-80 sm:w-64 xl:w-80"
-              src="https://firebasestorage.googleapis.com/v0/b/peaceful-d5db9.appspot.com/o/M2.JPG?alt=media&token=c6dcf635-cf06-4eec-9376-c55f52499bc8"
-              alt=""
-            />
-          </div>
+        <div className="mt-12 lg:mt-0">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/peaceful-d5db9.appspot.com/o/M2.JPG?alt=media&token=c6dcf635-cf06-4eec-9376-c55f52499bc8"
+            className="w-full shadow-lg rounded-lg border"
+          />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default About
+//   <div className="flex items-center justify-center -mx-4 lg:pl-8">
+// <div className="flex flex-col items-end px-3">
+//   <img
+//     className="object-cover mb-6 rounded shadow-lg h-28 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56"
+//     src="https://firebasestorage.googleapis.com/v0/b/peaceful-d5db9.appspot.com/o/M4.JPG?alt=media&token=68ccaa1a-f150-4737-9752-16e11748504c"
+//     alt=""
+//   />
+//   <img
+//     className="object-cover w-20 h-20 rounded shadow-lg sm:h-32 xl:h-40 sm:w-32 xl:w-40"
+//     src="https://firebasestorage.googleapis.com/v0/b/peaceful-d5db9.appspot.com/o/M3.JPG?alt=media&token=a24e0957-7325-4633-91ce-df7610868476"
+//     alt=""
+//   />
+// </div>
+// <div className="px-3">
+//   <img
+//     className="object-cover w-40 h-40 rounded shadow-lg sm:h-64 xl:h-80 sm:w-64 xl:w-80"
+//     src="https://firebasestorage.googleapis.com/v0/b/peaceful-d5db9.appspot.com/o/M2.JPG?alt=media&token=c6dcf635-cf06-4eec-9376-c55f52499bc8"
+//     alt=""
+//   />
+// </div>
